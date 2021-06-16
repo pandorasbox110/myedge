@@ -1,0 +1,234 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+} 
+
+body {
+  background: #214d8d; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left bottom, rgba(33, 77, 141, 1), rgba(78, 191, 231, 0.9) 90%); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top right, rgba(33, 77, 141, 1), rgba(78, 191, 231, 0.9) 90%); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top right, rgba(33, 77, 141, 1), rgba(78, 191, 231, 0.9) 90%); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top right, rgba(33, 77, 141, 1), rgba(78, 191, 231, 0.9) 90%); /* Standard syntax */
+}
+
+nav {
+    background: transparent!important;
+    border: 0px!important;
+    margin-top: 10px!important;
+}
+
+nav.navbar .container-fluid .navbar-header .navbar-brand {
+    font-size: 18px;
+    font-weight: 500;
+}
+    
+    .toc-header {
+        font-stretch: condensed;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 200!important;
+    }
+    
+    .toc-hr {
+        height: 1px;
+        background: #fff;
+        width: 150px;
+        margin: -5px auto 25px;
+    }
+    
+    .toc-item div .btn-default {
+        width: 100%;
+        color: #486da8;
+        text-align: left;
+        box-shadow: 1px 1px 4px #444;
+        margin-bottom: 10px;
+    }
+    
+    .toc-item div .btn-default:hover,
+    .toc-item div .btn-default:focus,
+    .toc-item div .btn-default:active,
+    .toc-item div .btn-default.active {
+        background: #fff;
+    }
+    
+    
+    .back-btn {
+        position: fixed;
+        bottom: 20px;
+        left: 30px;
+        z-index: 2000;
+    }
+        .back-btn .btn-default:hover,
+        .back-btn .btn-default:focus,
+        .back-btn .btn-default:active,
+        .back-btn .btn-default.active {
+            background: #fff!important;
+        }
+    
+    
+    .option-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 2000;
+    }
+
+        .btn-circle {
+            width: 40px;
+            height: 40px;
+            color: #486da8;
+            text-align: center;
+            padding: 7px 0;
+            font-size: 18px;
+            line-height: 1.428571429;
+            border-radius: 20px;
+            background: #fff;
+            box-shadow: 0px 0px 3px #666;
+        }
+        .option-btn .btn-default:hover,
+        .option-btn .btn-default:focus,
+        .option-btn .btn-default:active,
+        .option-btn .btn-default.active {
+            background: #fff!important;
+        }
+    
+    .option-overlay {
+        position: absolute;
+        display: none;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background: rgba(26, 139, 195, 0.7);
+        z-index: 10000;
+    }
+    
+    .option-overlay label{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        font-stretch: condensed;
+        margin-right: 10px;
+    }
+    .one {
+        position: absolute;
+        bottom:220px;
+        right: 30px;
+    }
+    .two {
+        position: absolute;
+        bottom:170px;
+        right: 30px;
+    }
+    .three {
+        position: absolute;
+        bottom:120px;
+        right: 30px;
+    }
+    .four {
+        position: absolute;
+        bottom:70px;
+        right: 30px;
+    }
+    .five {
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+    }
+
+.navbar-fixed-bottom .container-fluid .main-controls {
+    padding-top: 7px!important;
+}
+
+        #tutorial.overlay {display: none;
+            background: rgba(0,0,0,0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 9999999;
+            
+        }
+        #tutorial.overlay .content-frame {
+            background: rgba(255, 255, 255, 0.6);
+            top: 20%;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        
+        @media (max-width: 768px){
+            #tutorial.overlay .content-frame {
+                top: 10%;
+            }   
+        }
+        
+        #tutorial.overlay .content-frame .content-main {
+            background: #fff;
+            border-radius: 8px;
+        }
+        
+        #tutorial.overlay .content-frame .content-main .item {
+            min-height: 345px;
+        }
+        
+        #tutorialsample {
+            background: #214d8d; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(left bottom, rgba(33, 77, 141, 1), rgba(78, 191, 231, 0.9) 90%); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(top right, rgba(33, 77, 141, 1), rgba(78, 191, 231, 0.9) 90%); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(top right, rgba(33, 77, 141, 1), rgba(78, 191, 231, 0.9) 90%); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to top right, rgba(33, 77, 141, 1), rgba(78, 191, 231, 0.9) 90%); /* Standard syntax */
+        }
+            #tutorial.overlay .content-frame .content-main .carousel-inner > .item > img,
+            #tutorial.overlay .content-frame .content-main .carousel-inner > .item > a > img {
+                margin: auto;
+            }
+        
+            #tutorial.overlay .content-frame .content-main .carousel-control {
+                background: none;
+            }
+        
+            #tutorial.overlay .content-frame .content-main .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+                right: -25px;  //or you can increase this
+                margin-right: 
+            }
+
+            #tutorial.overlay .content-frame .content-main .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+                left: -25px; //or you can increase this
+            }
+        
+            #tutorial.overlay .content-frame .content-main .slide .carousel-indicators {
+                position: absolute;
+                bottom: -60px; //or you can increase this
+                left: 50%;
+                z-index: 15;
+                width: 60%;
+                padding-left: 0;
+                margin-left: -30%;
+                text-align: center;
+                list-style: none;
+            }
+            #tutorial.overlay .content-frame .content-main .slide .carousel-indicators li {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                margin: 1px;
+                text-indent: -999px;
+                cursor: pointer;
+                background-color: #000 \9;
+                background-color: rgba(0, 0, 0, 0);
+                border: 3px solid rgba(255,255,255, 0.5);
+                border-radius: 10px;
+            }
+            #tutorial.overlay .content-frame .content-main .slide .carousel-indicators .active {
+                width: 17px;
+                height: 17px;
+                margin: 0;
+                background-color: #fff;
+            }
+
+
+
+    

@@ -1,0 +1,346 @@
+ 
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    position: absolute;
+	background:#b6a0f7;
+	border-radius:0 0 45px 45px;
+    width: 100%;
+    height: 50px;  
+    z-index: 100;
+	border-bottom:3px solid #9880dd; 
+    top: 0px;
+}
+    
+.mainCont {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 90px 0px;
+    top: 0px;
+	
+}
+
+.board {
+        background: #fff;
+        height: 100%;
+		border-radius:25px;
+		border:6px solid #ff9c00;
+		overflow-y:scroll;
+		padding:5px 40px!important;
+		
+    }
+    
+.footer {
+    position: absolute;
+	background:#67e27e;	
+	border-radius:45px 45px 0 0 ;
+    width: 100%;
+    height: 60px;  
+    z-index: 100;
+    bottom: 0px;
+	padding:10px;
+	text-align:center;
+	 border-top:3px solid #5cc36f;
+}
+
+ nav {
+        z-index: 9999!important;
+		
+    }
+    .btn {
+        z-index: 9999!important;
+    }
+    .navbar-fixed-top {
+        background: transparent!important;		
+        width: 98%;
+        border-radius:0px 0px 10px 10px;
+        border: 0px!important;
+    }
+	.navbar-brand {
+		font-size: 20px;
+		font-weight: bold;
+		color: #fff!important;
+		text-shadow: 1px 1px 3px #333;
+        }
+	.navbar-header .navbar-toggle,.navbar-header .navbar-toggle:hover,.navbar-header .navbar-toggle:focus {
+		background: #66b8ea;
+		border:none;
+		color: #fff!important;
+        }
+	.navbar-right li a + .tooltip > .tooltip-inner {
+		color: #fff; 
+		padding: 10px 20px;
+		font-size: 14px;
+		border-radius: 10px;
+    }
+
+    .navbar-tabs.pull-right div a span {
+		margin-top:12px;
+        background: #f1598f!important;
+		box-shadow: #b56b14 0px 2px 0px;
+		margin-right:5px;
+	
+    }
+    .navbar-tabs.pull-right div a span:hover,
+    .navbar-tabs.pull-right div a span.active,
+    .navbar-tabs.pull-right div a span:focus {
+		background: #67e27e!important;
+		box-shadow: #b56b14 0px 2px 0px;
+		
+    }
+    
+    .navbar-fixed-bottom {
+        width: 98%;
+        border-radius:10px 10px 0px 0px;
+        padding-top: 7px;
+        padding-bottom: 0px;
+        background: #1aa78e/*2b92a9*/;
+        border: 0px;
+    }
+	.navbar-fixed-bottom .btn-group .btn-warning {
+		padding-left: 7px;
+		padding-right: 7px;
+		font-size: 12px;
+	}
+		
+		
+		
+@media (min-width: 769px){
+	.navbar-right {
+		position: absolute;			
+		right: 19px;
+		top: 64px;
+	}
+	.navbar-right li a{
+		background: #f1598f;
+		color: #fff!important;
+		border-bottom:2px solid #b93665;
+		border-radius: 12px;
+		padding: 13px 20px;
+		letter-spacing:1px;
+		margin: 0px 2px;
+	}
+        
+	.navbar-right li a:hover{
+		background: #d52865!important;
+		color: #fff!important;
+		-webkit-transition-duration: 0.4s; /* Safari */
+		transition-duration: 0.5s;
+		
+		}        
+	.navbar-right li a:focus{
+		background: #d52865!important;
+		color: #fff!important;
+		
+	}
+        
+	.navbar-right li.active a{
+		background: #67e27e!important;
+		border-bottom:2px solid #f87da9;
+		color: #fff!important;
+	}
+			
+}   
+
+@media (max-width: 768px) {   
+    .mainCont{	
+		padding:0;
+	}
+	.board{
+		border:none!important;
+		border-radius:0;
+		padding:60px 20px 85px 20px!important;
+		height:100%;		
+	}
+	.header{
+		border-radius:0;
+	}
+	.footer{
+		border-radius:0;
+	}
+	 .navbar {
+		border-radius: 0px;
+	}
+	.navbar-fixed-top {
+		width: 100%;
+	}
+	.navbar-collapse {
+		background: #66b8ea;
+		position: absolute!important;
+		top: 55px;
+		right: 30px;
+		border-radius: 10px;
+		max-width: 200px;
+	}        
+	.navbar-collapse li{
+		width: 90%;
+	} 
+        
+	.navbar-default .navbar-nav > li > a {
+		color: #fff;
+		text-align: center;
+		margin: 0px 5px;
+		min-width: 150px;
+		
+	}        
+	.navbar-default .navbar-nav > li > a:hover,
+	.navbar-default .navbar-nav > li > a:focus {
+		color: #f29b30;
+		font-weight: bold;
+		background: none;
+		border-radius: 10px;
+        }
+        
+	.navbar-default .navbar-nav > .active > a, 
+	.navbar-default .navbar-nav > .active > a:hover, 
+	.navbar-default .navbar-nav > .active > a:focus {
+		background: none;
+		color: #f29b30;
+		font-weight: bold;
+        }        
+	#point-up {
+		position: absolute!important;
+		top: -10px;
+		right: 30px;
+		display:inherit!important;
+		color: #1aa78e/*2b92a9*/;
+        }
+        
+	.navbar-tabs.pull-right {
+		position: absolute;
+		top: 0px;
+		width: 100%;
+	
+        }
+	.tooltip {
+		display: none!important;
+        }        
+	.navbar-tabs.pull-right div {
+		position: absolute;
+		z-index: 1000;
+		top: 45px;
+		right:50px;
+		
+			
+		}
+	.navbar-tabs.pull-right div li a {
+		color: #fff!important;
+		}
+        
+	.navbar-fixed-bottom {
+            width: 100%;
+        }
+        
+	.objmod {
+            margin-top: 150px!important;
+        }
+        
+    }   
+}  
+    /* At media section */
+@media (max-width: 990px) {   
+    .mainCont{	
+	padding:0;
+	}
+	.board{
+		border:none!important;
+		border-radius:0;
+		padding:55px 10px;
+		height:100%;		
+		width:100%;
+		
+	}
+	.header{
+		border-radius:0;
+	}
+	.footer{
+		border-radius:0;
+	}	
+	
+}  
+.button{	
+    background-color: #3f9ac7; /* Green */
+    border: 3px solid white;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius:14px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button:hover{
+	
+    background-color: #65ee7e; 
+    color: white; 
+    border: 3px solid white;	
+	border-radius:14px;
+}
+.button:visited{
+	text-decoration:none;
+	
+}
+.modalDialog {
+	
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	
+	background: linear-gradient(#3a84de 0, #d0e4f2 100%);
+	box-shadow: 0 0 5px #d0e4f2;
+	width: 50%;
+	height:50;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+}
+
+/* NAV & Media Screen */
+
+
+/* NAV & Media Screen */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,166 @@
+
+        #tutorial.overlay {display: none;
+            background: rgba(0,0,0,0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 9999999;
+            
+        }
+        #tutorial.overlay .content-frame {
+            background: rgba(255, 255, 255, 0.6);
+            top: 20%;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        
+        @media (max-width: 768px){
+            #tutorial.overlay .content-frame {
+                top: 10%;
+            }   
+        }
+        
+        #tutorial.overlay .content-frame .content-main {
+            background: #fff;
+            border-radius: 8px;
+        }
+        
+        #tutorial.overlay .content-frame .content-main .item {
+            background-color: #fff; 
+            background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#eee .1em, transparent .1em);
+            background-size: 100% 1.2em;
+            min-height: 345px;
+        }
+        
+        #tutorialsample {
+            background: #214d8d!important; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(left bottom, rgba(33, 77, 141, 1), rgba(78, 191, 231, 0.9) 90%)!important; /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(top right, rgba(33, 77, 141, 1), rgba(78, 191, 231, 0.9) 90%)!important; /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(top right, rgba(33, 77, 141, 1), rgba(78, 191, 231, 0.9) 90%)!important; /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to top right, rgba(33, 77, 141, 1), rgba(78, 191, 231, 0.9) 90%)!important; /* Standard syntax */
+        }
+            #tutorial.overlay .content-frame .content-main .carousel-inner > .item > img,
+            #tutorial.overlay .content-frame .content-main .carousel-inner > .item > a > img {
+                margin: auto;
+            }
+        
+            #tutorial.overlay .content-frame .content-main .carousel-control {
+                background: none;
+            }
+        
+            #tutorial.overlay .content-frame .content-main .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+                right: -25px;  //or you can increase this
+                margin-right: 
+            }
+
+            #tutorial.overlay .content-frame .content-main .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+                left: -25px; //or you can increase this
+            }
+        
+            #tutorial.overlay .content-frame .content-main .slide .carousel-indicators {
+                position: absolute;
+                bottom: -60px; //or you can increase this
+                left: 50%;
+                z-index: 15;
+                width: 60%;
+                padding-left: 0;
+                margin-left: -30%;
+                text-align: center;
+                list-style: none;
+            }
+            #tutorial.overlay .content-frame .content-main .slide .carousel-indicators li {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                margin: 1px;
+                text-indent: -999px;
+                cursor: pointer;
+                background-color: #000 \9;
+                background-color: rgba(0, 0, 0, 0);
+                border: 3px solid rgba(255,255,255, 0.5);
+                border-radius: 10px;
+            }
+            #tutorial.overlay .content-frame .content-main .slide .carousel-indicators .active {
+                width: 17px;
+                height: 17px;
+                margin: 0;
+                background-color: #fff;
+            }
+
+.animated {
+    -moz-animation-name: pulseeffect;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-play-state: running;
+
+    -webkit-animation-name: pulseeffect;
+
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+
+    animation-name: pulseeffect;
+    animation-duration: 1s;
+
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+    @-moz-keyframes pulseeffect {
+        0%   {
+                background-color: #f0ad4e;
+                border-color: #eea236;
+            }
+        70%  {
+                background-color: #f69512;
+                border-color: #d58512;
+                text-shadow: 0px 0px 3px #fff;
+            }
+        100%  {
+                background-color: #f0ad4e;
+                border-color: #eea236;
+            }
+    }
+    @-webkit-keyframes pulseeffect {
+        0%   {
+                background-color: #f0ad4e;
+                border-color: #eea236;
+            }
+        70%  {
+                background-color: #f69512;
+                border-color: #d58512;
+                text-shadow: 0px 0px 3px #fff;
+            }
+        100%  {
+                background-color: #f0ad4e;
+                border-color: #eea236;
+            }
+    }
+
+    /* Standard syntax */
+    @keyframes pulseeffect {
+        0%   {
+                background-color: #f0ad4e;
+                border-color: #eea236;
+            }
+        70%  {
+                background-color: #f69512;
+                border-color: #d58512;
+                text-shadow: 0px 0px 3px #fff;
+            }
+        100%  {
+                background-color: #f0ad4e;
+                border-color: #eea236;
+            }
+    }
+
+
+
+    

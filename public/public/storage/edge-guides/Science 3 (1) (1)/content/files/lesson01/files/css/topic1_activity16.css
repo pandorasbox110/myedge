@@ -1,0 +1,90 @@
+#main_content{ min-height: 300px; }
+
+#progress, #solution{
+    margin-bottom: 75px;
+}
+
+#main_icon{
+    background-image: url(../../img/activity.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#main_nav{
+    text-align: right;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.nav_button{
+    background: #1696d7;
+    border: 1px solid #fff;
+    margin: auto;
+    margin-top: 5px;
+    width: 110px;
+}
+
+.nav_button:hover{
+    background: #f08734;
+    border: 1px solid #fff;
+}
+
+div.item_slideshow{
+    position: relative;
+    display: block;
+    margin: auto;
+    padding: auto;
+}
+
+div.item{
+    position: absolute;
+    left: 0; right: 0; top: 0;
+    opacity: 0;
+    overflow: hidden;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 25px;
+    color: #02202f;
+}
+
+div.item.show{
+    position: relative;
+    transition: 0.5s opacity;
+    opacity: 1;
+	z-index: 5;
+}
+
+#input0,
+#input1,
+#input2,
+#input3,
+#input4,
+#input5,
+#input6,
+#input7,
+#input8,
+#input9{
+	background: #fff;
+	border: 3px solid #df9a16;
+    width: 175px;
+	border-radius: 10px;
+	margin-left: 10px;
+	text-align: center;
+    color: #df9a16;
+    font-family: Roboto-Bold;
+}
+
+div.item.show input[type="text"]{
+    z-index: 5;
+    pointer-events: auto;
+}
+
+.ans_icon{
+    height: 1em;
+    margin-right: 7px;
+}
+
+#progress input[type="text"],
+#solution input[type="text"]{
+    pointer-events: none;
+}

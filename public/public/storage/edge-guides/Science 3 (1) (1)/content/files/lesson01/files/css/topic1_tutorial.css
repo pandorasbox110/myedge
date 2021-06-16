@@ -1,0 +1,42 @@
+#main_icon{
+    background-image: url(../../img/topic101.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.nav_button{
+    width: 215px;
+}
+
+h2{
+    font-family: 'Roboto-Bold';
+    font-size: 1.3em;
+    color: #ff9900;
+}
+
+table{
+    position: relative;
+    margin: auto;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid #000;
+    padding: 3px;
+}
+
+td{ vertical-align: text-top; }
+
+#main_submenu{ display: none; }
+
+@media screen and (max-width: 600px){
+    
+    #main_nav .nav_button{
+        display: none;
+    }
+    #main_submenu{
+        display: block;
+    }
+    
+}

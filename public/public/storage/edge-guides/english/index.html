@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Science 3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/ionicons-2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/unique.css">
+</head>
+
+    <style>
+        
+        body {
+            background-size: cover    
+        }
+        
+        .intro {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background: #f08907;
+            box-shadow:0px 0px 250px 10px #f74d00 inset; 
+            
+            /*
+            background: #295cba;
+            box-shadow:0px 0px 250px 10px rgba(0, 0, 0, 0.7) inset;
+            */
+            z-index: 99999;
+            color: #fff;
+        }
+        .intro .close-me {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+        }
+        .intro .close-me:hover {
+            color: #e2e2e2;
+            text-shadow: 0px 0px 3px #333;
+            top: 16px;
+            right: 16px;
+        }
+        .intro img {
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .intro .jumbotron {
+            background: none;
+            text-shadow: 0px 0px 2px #fff;
+        }
+            
+        .showme {
+            height: 80%;
+            width: 100%;
+            overflow: hidden!important;
+            border: 10px solid transparent;
+            border-top: 10px solid #fff;
+            border-right: 10px solid #fff;
+            border-left: 10px solid #fff;
+        }
+        .showme2 {
+            color: #fff;
+            /*
+            text-shadow: 0px 0px 4px #333;
+            background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#eee .1em, transparent .1em);
+            background-size: 100% 1.2em;
+            */
+            height: 20%;
+            width: 100%;
+            overflow: hidden!important;
+            border: none;
+        }
+        @media (max-width: 768px){
+            .intro {
+                padding-top: 50px;
+            }
+            .showme {
+                height: 80%;
+            }
+            .showme2 {
+                height: 20%;
+                font-size: 16px!important;
+            }
+        }
+        
+        @media (max-device-width: 1600px){
+            .showme2 {
+                font-size: 20px;
+            }
+        }
+        
+        
+        #showme2 {  
+            border-top: 10px solid #fff;
+            border-right: 10px solid #fff;
+            border-left: 10px solid #fff;
+            background: #214d8d; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(left bottom, rgba(33, 77, 141, 1), rgba(78, 191, 231, 0.9) 90%); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(top right, rgba(33, 77, 141, 1), rgba(78, 191, 231, 0.9) 90%); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(top right, rgba(33, 77, 141, 1), rgba(78, 191, 231, 0.9) 90%); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to top right, rgba(33, 77, 141, 1), rgba(78, 191, 231, 0.9) 90%); /* Standard syntax */
+        /*
+          background: url(content/image/bgcloud.png) center top repeat-x;
+          animation: awan-animasi 60s linear infinite;
+          -ms-animation: awan-animasi 60s linear infinite;
+          -moz-animation: awan-animasi 60s linear infinite;
+          -webkit-animation: awan-animasi 60s linear infinite;
+        */
+        }
+
+        @keyframes awan-animasi {
+          from {
+            background-position: 0 0;
+          }
+
+          to {
+            background-position: 100% 0;
+          };
+        }
+
+        @-webkit-keyframes awan-animasi {
+          from {
+            background-position: 0 0;
+          }
+
+          to {
+            background-position: 100% 0;
+          };
+        }
+
+        @-ms-keyframes awan-animasi {
+          from {
+            background-position: 0 0;
+          }
+
+          to {
+            background-position: 100% 0;
+          };
+        }
+
+        @-moz-keyframes awan-animasi {
+          from {
+            background-position: 0 0;
+          }
+
+          to {
+            background-position: 100% 0;
+          };
+        }
+        
+    </style>    
+    
+    
+<body style="background: #fff;  padding-bottom: 5px;">
+    
+    <div id="intro" class="intro">
+        <div class="close-me"><i class="fa fa-lg fa-close"></i></div>
+        <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2">  
+            <img src="img/edge.png" class="img-responsive" alt="edge">
+        </div>
+        <div class="jumbotron col-xs-12"> 
+            <h1 class="text-center">EDGE Science</h1>
+            <h2 class="text-center">Product Tour</h2>
+        </div>
+        <div class="col-xs-12 text-center">
+            <button type="button" class="btn btn-default close-me2">Start</button>
+        </div>
+    </div>
+
+
+    
+    <div src="content/1.html" id="showme2" class="showme2 text-center">
+
+        <div id="1" class="col-xs-10 col-xs-offset-1">
+            <h3>Welcome to EDGE Science.</h3>
+            <p>Shown below is the table of contents. It presents the list of topics in the course. You can go to a particular topic by selecting its title in the list.</p>
+        </div>
+        
+        
+        <div id="2" class="col-xs-10 col-xs-offset-1">
+            <br />
+            <p>Below is the home page of the lesson.</p>
+            <p>Tap on 
+                <button id="back-Btn" type="button" class="" style="background: #bbdd37; border: 0; border-radius: 10px; padding: 7px 30px;">
+                    OBJECTIVES
+                </button> 
+                to view the lesson's learning objectives.</p>
+        </div>
+        
+        
+        <div id="3" class="col-xs-10 col-xs-offset-1">
+            <br />
+            <p>Select 
+            <button type="button" class="btn btn btn-warning previous">
+                Next <i class="glyphicon glyphicon glyphicon-chevron-right"></i>
+            </button>
+             to go to the next section in the lesson. Select 
+            <button type="button" class="btn btn btn-warning previous">
+                Previous <i class="glyphicon glyphicon glyphicon-chevron-left"></i>
+            </button>
+             to go back to the previous section. Select 
+            <button type="button" class="btn btn btn-warning previous">
+                Exit <i class="glyphicon glyphicon glyphicon-chevron-right"></i>
+            </button>
+             to exit the lesson.</p>
+        </div>
+        
+        
+        <div id="4" class="col-xs-10 col-xs-offset-1">
+            <br />
+            <p>
+            EDGE also has interactive assessments and exercises. Click 
+            <button type="button" class="btn btn btn-warning previous">
+                Next <i class="glyphicon glyphicon glyphicon-chevron-right"></i>
+            </button> 
+            to proceed to the assessment.
+            </p>
+        </div>
+        
+        
+        <div id="5" class="col-xs-10 col-xs-offset-1">
+            <br />
+            <p>The instructions on how you can answer the sets of excercises are given on the page.</p>
+        </div>
+        
+        
+        <div id="6" class="col-xs-10 col-xs-offset-1">
+            <div class="col-sm-8 col-sm-offset-2">
+                <style>
+                    .nav-tabs { border-bottom: 1px solid #eee; }
+                    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+                    .nav-tabs > li > a { border: none; color: #f0ad4e; }
+                    .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #ec971f !important; background: transparent; } 
+                    .nav-tabs > li > a::after { content: ""; background: #ec971f; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+                    .nav-tabs > li.  active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+                    .tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+                    .tab-pane { padding: 15px 0; }
+                    .tab-content{padding:20px}
+                </style>
+                <ul class="nav nav-tabs">
+                    <li><a data-toggle="tab" href="#menu1" id="btn1">Set 1</a></li>
+                    <li><a data-toggle="tab" href="#menu2" id="btn2">Set 2</a></li>
+                    <li><a data-toggle="tab" href="#menu3" id="btn3">Set 3</a></li>
+                    <li class="active"><a data-toggle="tab" href="#submit" id="btn4">Finish</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12">
+                <p>When you're done answering the items in the first set, tap the tab of the next set. After answering the items in all of the sets, tap "Finish", then tap  
+                <button type="button" class="btn btn btn-warning previous">
+                    Submit Answers
+                </button>.
+                </p>
+            </div>
+        </div>
+        
+        
+        <div id="7" class="col-xs-10 col-xs-offset-1">
+            <br />
+            <p>After tapping  
+            <button type="button" class="btn btn btn-warning previous">
+                Submit Answers
+            </button>
+            , the program will automatically check your answers and feedback on your performance is shown. Click  
+            <button type="button" class="btn btn btn-warning previous">
+                OK
+            </button>.
+            </p>
+        </div>
+        
+        
+        <div id="8" class="col-xs-10 col-xs-offset-1">
+            <br />
+            <p>The number of items, the number of correct answers, and your score (in %) is shown.</p>
+        </div>
+    </div>
+
+    <iframe scrolling="no" src="content/1.html" id="showme" class="showme">
+        
+    </iframe>
+
+    
+
+    
+    <nav class="navbar navbar-default navbar-fixed-top navigate" style="background: transparent!important; border: 0px!important; padding-top: 30px!important;">
+        <div class="container-fluid">
+            <div class="main-controls">
+                <button type="button" class="btn btn-primary previous pull-left">
+                    <i class="glyphicon glyphicon glyphicon-chevron-left"></i>
+                </button>
+                <button type="button" class="btn btn-primary next pull-right">
+                    <i class="glyphicon glyphicon glyphicon-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+ 
+</body>
+<script src="vendors/jquery/jquery.min.js"></script>
+<script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+
+    
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Different Kinds of Nouns</title>
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/topic1_tutorial.css"/>
+</head>
+
+<body id="body">
+
+	<div id="body_bg_left" class="show"></div>
+	<div id="body_bg_right" class="show"></div>
+    <div id="body_bg_popup"></div>        
+	
+    <div class="body">
+        <div class="body_slideshow">
+            
+        <!-- MAIN -->
+        <div class="body_slide show" id="main">
+            
+            <!-- Submenu @top of page -->
+            <div id="submenu_header">
+                <input type="button" class="submenu_button" id="objectives_button2" onclick="showObjectives()" value="Objectives"/>
+            </div>
+            
+            <!-- Header -->
+            <div id="main_header">
+                <div id="main_icon"></div>
+                <div id="main_title">
+                    <h1>Different Kinds of Nouns</h1>
+                </div>
+            </div>
+            
+            <!-- Main Content -->
+            <div id="main_content">
+            
+            <!-- Navigation -->
+            <div id="main_nav">
+                <input type="button" class="nav_button" value="Kinds of Nouns" id="0"/>
+                <input type="button" class="nav_button" value="Common and Proper Nouns" id="1"/>
+                <input type="button" class="nav_button" value="Concrete and Abstract Nouns" id="2"/>
+                <input type="button" class="nav_button" value="Mass and Count Nouns" id="3"/>
+                <input type="button" class="nav_button" value="Compound Nouns" id="4"/>
+                <input type="button" class="nav_button" value="Collective Nouns" id="5"/>
+                <select id="main_submenu">
+                    <option>Kinds of Nouns</option>
+                    <option>Common and Proper Nouns</option>
+                    <option>Concrete and Abstract Nouns</option>
+                    <option>Mass and Count Nouns</option>
+                    <option>Compound Nouns</option>
+                    <option>Collective Nouns</option>
+                </select>
+            </div>
+            
+            <!-- Discussion slides -->
+            <div id="discussion_slideshow">
+                
+				<!-- Concrete/Abstract Nouns -->
+				<div class="discussion_slide" id="2">
+                <div class="topic3slide slide slideshow show">
+                    <div class="topic3item"><p><span class="em5">Common nouns</span> are subdivided into <span class="em5">concrete</span>, <span class="em5">abstract</span>, <span class="em5">mass</span>, and <span class="em5">count nouns</span>.</p></div>
+                    <div class="topic3item"><p>A <span class="em1">concrete noun</span> names something that can be perceived through the senses - <span class="em7">song</span>, <span class="em7">bridge</span>, <span class="em7">priest</span>, <span class="em7">school</span>, etc.</p></div>
+                    <div class="topic3item"><p>An <span class="em1">abstract noun</span> names a quality, a thought, or an idea - <span class="em7">talent</span>, <span class="em7">belief</span>, <span class="em7">friendship</span>, <span class="em7">independence</span>, etc.</p></div>
+                </div>
+                </div>
+				
+            </div> <!-- end of discussion_slideshow -->
+            
+            </div> <!-- end of main_content -->
+ 
+            <!-- Footer -->
+            <div id="discussion_footer">            
+                <input type="button" id="prev" class="disabled" onclick="prev()"/> 
+                <input type="button" id="next" class="disabled" onclick="next()"/>
+            </div><!-- end of footer -->
+            
+        <div id="edupower"></div>   
+            
+        </div> <!-- end of main -->
+            
+        <!-- OBJECTIVES -->    
+        <div class="popup" id="objectives">
+            <div class="popup_close" id="objectives_close"
+            onclick="closeObjectives()">X</div>
+            <div class="popup_content">
+                <div id="popup_icon"></div>
+                <div id="popup_header">
+                    <h1>In this lesson, you will learn to:</h1>
+                </div>
+				<p><ul>
+                <li>Identify and use nouns and their kinds</li>
+                </ul></p>
+            </div>
+        </div> <!-- end of objectives -->
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="../script.js"></script>
+    <script type="text/javascript" src="../js/topic1_tutorial.js"></script>
+      <script type="text/javascript">
+		showSlide(2);
+	</script>
+    <script type="text/javascript" src="../../../jquery.js"></script>
+    <script>        
+        $(document).ready(function(){
+            sChange();
+        });
+        window.onresize = function(event) {
+            sChange();
+        };
+        function sChange() {
+            var x = $("body").innerHeight();
+            $("#main_content").height(x - 250);
+        }
+    </script>
+    
+</body>
+</html>

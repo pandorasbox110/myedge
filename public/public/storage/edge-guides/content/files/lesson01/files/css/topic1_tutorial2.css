@@ -1,0 +1,43 @@
+#main_icon{
+    background-image: url(../../img/topic102.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+h2{
+    font-family: Roboto-Bold;
+    font-size: 1.3em;
+    color: #ff9900;
+}
+
+table{
+    position: relative;
+    margin: auto;
+    overflow: auto;
+}
+
+tr, th, td{
+    margin: 0;
+    padding: 3px;
+    width: 88px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+#main_submenu{ display: none; }
+
+.nav_button{ width: 250px; }
+
+@media screen and (max-width: 600px){
+    tr, th, td{
+        padding: 1px;
+        width: 75px;
+        font-size: 0.85em;
+    }
+    #main_nav .nav_button{
+        display: none;
+    }
+    #main_submenu{
+        display: block;
+    }
+}

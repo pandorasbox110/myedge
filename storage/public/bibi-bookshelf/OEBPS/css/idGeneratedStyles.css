@@ -1,0 +1,1785 @@
+
+@font-face {
+  font-family: "Avgardn_normal";
+  src: url(../font/Avgardn.ttf)
+}
+
+@font-face {
+  font-family: "Avgardni_italic";
+  src: url(../font/Avgardni.ttf)
+}
+@font-face {
+  font-family: "Avgarddo_italicbold";
+  src: url(../font/Avgarddo.ttf)
+}
+
+@font-face {
+  font-family: "Avgardd_bold";
+  src: url(../font/Avgardd.ttf)
+}
+
+@font-face {
+  font-family: "VAGRON";
+  src: url(../font/VAGRON.TTF)
+}
+
+@font-face {
+  font-family: "BERNHC";
+  src: url(../font/BERNHC.TTF)
+}
+
+@font-face {
+  font-family: "comic";
+  src: url(../font/comic.ttf)
+}
+
+
+body {
+	font-size:18px;
+	line-height:23px;
+	word-wrap: break-word;
+}
+a{
+	text-decoration:none;
+	/*color:#000000  !important;*/
+	 color: inherit;  
+}
+
+.cover{
+	width:100%;
+}
+
+li{
+	font-size:18px;
+}
+
+p, div{
+	/*text-align:left;*/
+	font-family: "Avgardn_normal" !important;
+	display:block;
+}
+li div{
+	margin-left:3px;
+	margin-bottom:15px;
+}
+
+
+em{
+	font-family: "Times New Roman", Times, serif;
+}
+
+span.helveticaCondensed em{
+	font-family: "helvetica-condensed" !important;
+}
+strong{
+	font-family: "Avgardd_bold";
+}
+
+h1{
+	/*font-family: "Briquet" !important;*/
+}
+
+a.link{
+	color:#02aaea !important;
+}
+
+
+
+
+/* text alignment */
+.txtCenter{
+	text-indent: 0px;
+	display:block !important;
+	text-align:center !important;
+	font-family: "Avgardn_normal" !important;
+	width:100%;
+}
+.txtLeft, ul li, ol li, #insA, #insB, #insC, .instructions{
+	text-align:left !important;
+	text-indent: 0px;
+	font-family: "Avgardn_normal" !important;
+}
+.txtRight{
+	text-align:right !important;
+	font-family: "Avgardn_normal" !important;
+}
+
+/* Margin */
+.marginTop{
+	margin-top:30px;
+}
+
+/* padding */
+.paddingLeft{
+	padding-left:25px;
+}
+
+
+/* font color */
+.blue{
+	color:#005bad !important;
+}
+.blue2{
+	color:#00aeef !important;
+}
+.red{
+	color:#d2232a !important;
+}
+
+
+/* font style */
+
+.newcenturyschoolbook{
+	font-family: "Avgardn_normal" !important;
+}
+
+.Avgardn_normal{
+	font-family: "Avgardn_normal-condensed" !important;
+}
+.Avgardni_italic{
+	font-family: "Avgardni_italic" !important;
+}
+.Avgarddo_italicbold{
+	font-family: "Avgarddo_italicbold" !important;
+}
+.Avgardd_bold{
+	font-family: "Avgardd_bold" !important;
+}
+
+
+
+
+
+/* font size */
+.font150{
+	font-size:150%;
+}
+
+/* font style*/
+
+
+
+/* box */
+.box1{
+	background-color:#cfeefb;
+	border:1px #02aaea solid;
+	border-radius:25px 0px 25px 0px;
+	padding:20px;
+}
+
+.box2{
+	border:1px #02aaea solid;
+	padding:20px;
+}
+.box2 table td{
+	vertical-align:text-top;
+}
+
+.box1 ul li p, .box1 ul li div{
+	/*font-family: "helvetica-condensed" !important;*/
+}
+
+span.box, div.box{
+	border:1px #000000 solid;
+	padding:2px;
+}
+
+
+/* width */
+.tb100{width:100%; padding: 0;}
+.w100{width:100%;}
+.w95{width:95%; margin:30px 0px 20px 0px !important; display:block;}
+
+.w90{width:400px; margin:0 auto !important; display:block;}
+.w75{width:300px; margin:0 auto !important; display:block; text-align:center !important;}
+.w50{width:250px; margin:0 auto !important; display:block;}
+.w25{width:150px; margin:0 auto !important; display:block;}
+.w10{width:100px; margin:0 auto !important; display:block;}
+/*
+.w90{width:90%; max-width:400px; margin:0 auto !important; display:block;}
+.w75{width:75%; max-width:300px; margin:0 auto !important; display:block; text-align:center !important;}
+.w50{width:50%; max-width:250px; margin:0 auto !important; display:block;}
+.w25{width:25%; max-width:150px; margin:0 auto !important; display:block;}
+*/
+
+/* tables */
+table {
+	border-collapse:collapse;
+	width:90%;
+	border-spacing: 0;
+}
+table td, table td div, table td p{
+	
+}
+
+table.tocTable td{
+	vertical-align:text-top;
+	font-family: "Avgardn_normal" !important;
+}
+
+.tableHolder{
+	display:block;
+	width:100%;
+}
+.tableHolder .mtable{
+	width:98%;
+	max-width:400px;
+	margin:0px auto;
+}
+.mtable .tdCenter{
+	text-align:center !important;
+	vertical-align:text-top;
+	padding:5px 2px;
+}
+.mtable .tdleft{
+	text-align:left;
+	vertical-align:text-top;
+	padding:5px 2px;
+}
+table.table1{
+}
+table.table1 td{
+	vertical-align:middle;
+	font-family: "Avgardn_normal" !important;
+}
+table.table1 .tHeader{
+	text-align:center !important;
+	font-style:italic;
+	padding:10px 5px;
+}
+table.table1 .tdCenter{
+	text-align:center !important;
+	padding:10px;
+}
+table.table1 .tdLeft{
+	text-align:left !important;
+	padding:10px;
+}
+table.table1 .tdRight{
+	text-align:right !important;
+	padding:10px;
+}
+
+table.borderColor{
+	border-color:#02aaea !important;
+}
+
+
+
+table.table2 .tHeader{
+	text-align:center !important;
+	font-style:italic;
+	padding:10px 5px;
+}
+table.table2 .tdCenter{
+	text-align:center !important;
+	padding:5px;
+	vertical-align:text-top;
+}
+table.table2 .tdLeft{
+	text-align:left !important;
+	padding:5px;
+	vertical-align:text-top;
+}
+table.table2 .tdRight{
+	text-align:right !important;
+	padding:5px;
+	vertical-align:text-top;
+}
+
+table.table3 {
+	width:98%;
+	/*border:1px #000000 solid;*/
+}
+table.table3 .tHeader{
+	text-align:center !important;
+	font-style:italic;
+	padding:10px 5px;
+	background-color:#cfeefb;
+	/*border:1px #000000 solid;*/
+}
+table.table3 .tdCenter{
+	text-align:center !important;
+	padding:10px 20px;
+	vertical-align:text-top;
+}
+table.table3 .tdLeft{
+	text-align:left !important;
+	padding:10px 20px;
+	vertical-align:text-top;
+}
+table.table3 .tdRight{
+	text-align:right !important;
+	padding:10px 20px;
+	vertical-align:text-top;
+}
+
+.table3 ol li{
+	margin-left:-15px;
+}
+
+table.mathTable{
+	margin:10px auto;
+}
+table.mathTable td{
+	vertical-align:text-top;
+}
+
+table.mathTable .tdRight{
+	padding:5px 2px;
+	text-align:right !important;
+}
+table.mathTable .tdLeft{
+	padding:5px 0px;
+	text-align:left !important;
+}
+table.mathTable .tdCenter{
+	padding:5px 0px;
+	text-align:center !important;
+}
+table.mathTable .mathTableDescription{
+	font-size:85%;
+	padding-left:10px;
+}
+
+/* paragraph style */
+div.txt_noIndent_copywrite, p.txt_noIndent_copywrite{
+	font-family: "Times New Roman", Times, serif !important;
+	text-indent: 0px !important;
+	text-align:left !important;
+	margin:15px 0px;
+}
+div.txt_noIndent, p.txt_noIndent{
+	font-family: "Avgardn_normal" !important;
+	text-indent: 0px !important;
+	text-align:left !important;
+	margin:15px 0px;
+}
+div.txt_noIndentA, p.txt_noIndentA{
+	font-family: "Avgardn_normal" !important;
+	text-indent: 0px !important;
+	text-align:left !important;
+	margin:15px 0px;
+}
+.txt_noIndentA::first-letter{
+	font-size: 200%;
+}
+div.txt_noIndentA, p.txt_noIndentA{
+	font-family: "Avgardn_normal" !important;
+	text-indent: 0px !important;
+	text-align:left !important;
+	margin:15px 0px;
+}
+div.txt_noIndentA::first-letter{
+	font-size: 200%;
+}
+p.txt_noIndentA::first-letter{
+	font-size: 200%;
+}
+
+p.txtNoIndent, div.txtNoIndent{
+	font-family: "Avgardn_normal" !important;
+	text-indent: 0px !important;
+	text-align:left !important;
+	margin:15px 0px !important;
+}
+.txt{
+	font-family: "Avgardn_normal" !important;
+	text-indent: 25px !important;
+	text-align:left !important;
+	margin:15px 0px;
+}
+
+
+.txt1{
+	font-family: "Avgardn_normal" !important;
+	padding-left:40px;
+	text-indent:-35px;
+	text-align:justify;
+}
+.txt2{
+	font-family: "Avgardn_normal" !important;
+	padding-left:25px;
+	text-indent:-25px;
+	text-align:justify;
+}
+.txt3{
+	font-family: "Avgardn_normal" !important;
+	text-indent: 25px !important;
+	text-align:left !important;
+}
+.txt4{
+	font-family: "Avgardn_normal" !important;
+	padding-left:75px;
+	text-indent:-75px;
+	text-align:left;
+}
+
+.txt5{
+	font-family: "Avgardn_normal" !important;
+	text-indent: 0 !important;
+	text-align:left !important;
+	margin:15px 0px 15px 25px;
+}
+
+.txt6{
+	display:block;
+	padding-left:22px;
+	text-indent:-25px;
+}
+
+.txt7{
+	display:block;
+	padding-left:20px;
+	text-indent:-20px;
+}
+
+.txt8{
+	display:block;
+	margin:15px 25px;
+	padding-left:20px;
+	text-indent:-20px;	
+}
+
+.txt9{
+	display:block;
+	margin:15px 0px;
+	padding-left:20px;
+	text-indent:-20px;
+}
+
+
+.steps{
+	font-family: "Avgardn_normal" !important;
+	padding-left:69px;
+	text-indent:-69px;
+	text-align:left;
+	
+}
+.item{
+	margin-right:10px;
+}
+.items{
+	font-family: "Avgardn_normal" !important;
+	padding-left:25px;
+	text-indent:-25px;
+	text-align:justify;
+}
+.items2{
+	font-family: "Avgardn_normal" !important;
+	padding-left:25px;
+	text-indent:-25px;
+	text-align:left;
+}
+
+.table{
+	font-family: "Avgardn_normal" !important;
+	padding-left:85px;
+	text-indent:-85px;
+	text-align:left;
+}
+.table strong{
+	margin-right:25px;
+}
+
+.table2{
+	font-family: "Avgardn_normal" !important;
+	padding-left:90px;
+	text-indent:-90px;
+	text-align:left;
+}
+.table2 strong{
+	margin-right:25px;
+}
+
+/* bullets */
+ul.nobullets{
+	list-style-type: none !important;
+}
+ul.nobullets li{
+	margin-left:-20px;
+}
+ul.coloredBullets li{
+	color:#02aaea;
+}
+
+ul.coloredBullets li p, ul.coloredBullets li div{
+	color:#000000;
+}
+
+li p{
+	padding-left:5px;
+}
+td p, td div{
+	line-height:20px;
+}
+
+
+/* inline styles */
+.inlineChoices{
+  display: flex;
+  align-items: top;
+  flex-wrap: nowrap;
+  text-align:left;
+  margin-bottom:-5px;
+  font-family: "Avgardn_normal" !important;
+}
+.inline{
+  display: flex;
+  align-items: top;
+  flex-wrap: nowrap;
+  margin:0px 0px 10px 0px;
+  text-align:left;
+  font-family: "Avgardn_normal" !important;
+}
+
+.inlineCenter{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.inlineChoices>div.item{
+	margin-right:10px;
+	white-space: nowrap;
+	text-align:left;
+	padding-top:5px;
+}
+.inline>div.item{
+	margin: 0px 10px;
+	white-space: nowrap;
+	text-align:left;
+}
+.inline>div.item2, .inlineCenter>div.item2, .inlineChoices>div.item2{
+	margin-right:10px;
+	white-space: nowrap;
+	text-align:left;
+}
+
+.inline>div, .inlineCenter>div, .inlineChoices>div{
+	font-family: "Avgardn_normal" !important;
+}
+
+
+/*   MATH EQUATIONS  */
+
+.math{
+	display: inline;
+	position: relative;
+	white-space:nowrap !important;
+	font-family: "Avgardd_bold" !important;
+	font-size:18px !important;
+	text-justify: none !important;
+}
+.math span.mn, .math span.mtext{
+	font-family: "Avgardd_bold" !important;
+}
+.math span.mi, .math span.mn em{
+	font-family: "Avgardd_bold" !important;
+	font-style: italic;
+	font-size:105%;
+}
+.math sup, .math sub, .math span sup, .math span sub{
+	font-family: "Avgardd_bold" !important;
+	font-size:70%;
+}
+.math sup.mi, .math sub.mi, .math span sup.mi, .math span sub.mi{
+	font-family: "Avgardd_bold" !important;
+	font-size:80%;
+	font-style: italic;
+	margin-left:-2px;
+}
+.math span sup, .math span sub, .math span sup.mi, .math span sub.mi{
+	margin:0px 2px;
+}
+.math span.mo{
+	font-family: "Avgardd_bold" !important;
+	font-size:105%;
+	margin:0px 2px;
+}
+
+.math span.mequals{
+	font-family: "Avgardd_bold" !important;
+	margin:0px 3px;
+	font-size:105%;
+}
+
+.math span.mbracket{
+	font-family: "Avgardd_bold" !important;
+	font-size:120%;
+}
+
+.math span.mcancel{
+	position:absolute;
+	margin-left:-7px;
+	font-size:150%;
+}
+
+.math span.mcancel2{
+	position:absolute;
+	transform: rotate(-20deg); 
+	margin-top:-10px;
+	font-size:150%;
+}
+
+.math span.mcancel3{
+	position:absolute;
+	margin-left:-7px;
+	margin-top:3px;
+	font-size:150%;
+}
+
+.math span.mcancel4{
+	position:absolute;
+	transform: rotate(20deg); 
+	font-size:150%;
+	margin-left:-10px;
+}
+.math span.mcancel5{
+	position:absolute;
+	margin-left:-7px;
+	margin-top:-3px;
+	font-size:100%;
+	font-weight:bold;
+}
+.math span.mcancel6{
+	position:absolute;
+	transform: rotate(-13deg); 
+	margin-top:-6px;
+	font-size:150%;
+}
+.math span.mcancel7{
+	position:absolute;
+	transform: rotate(-30deg); 
+	margin-top:-7px;
+	font-size:150%;
+}
+
+.math span.mCarryOver{
+	position:absolute;
+	margin-left:-10px;
+	margin-top:-12px;
+	font-size:70%;
+}
+.math span.mCarryOverBottom{
+	position:absolute;
+	margin-left:-7px;
+	margin-top:15px;
+	font-size:70%;
+}
+
+.math span.bracketA, .math span.bracketA2, .math span.bracketA3{
+	margin-right:10px;
+}
+.math span.bracketB{
+	margin-right:10px;
+}
+.math span.bracketB2, .math span.bracketB3{
+	margin-right:13px;
+}
+.math span.bracketA img, .math span.bracketB img{
+	width:6px !important;
+	margin-top:5px; 
+	position:absolute;
+}
+.math span.bracketA2 img, .math span.bracketB2 img{
+	width:8px;
+	margin-top:5px; 
+	position:absolute;
+}
+.math span.bracketA3 img, .math span.bracketB3 img{
+	width:12px ;
+	position:absolute;
+}
+
+.math>.radicalSym img.rad2{
+	width:5px ;
+}
+
+.math span.mathLetterSymbols, span.mathLetterSymbols{
+	font-family: "Avgardd_bold" !important;
+	color:#FFFFFF !important;
+	-webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+   font-size:105%;
+}
+
+.math span.mRadical{
+	border-top:1px #212121 solid;
+	margin-left:-1px;
+	padding-left:2px;
+	font-size:15px !important;
+	line-height:15px !important;
+}
+.math span.mRadical2{
+	border-top:1px #212121 solid;
+	margin-left:-1px;
+	padding-left:2px;
+	padding-top:1px;
+	font-size:15px !important;
+	line-height:17px !important;
+}
+.math span.radicalSym{
+	font-size:17px;
+}
+.math span.radicalSym2{
+	font-size:19px;
+}
+.math sup.nrad{
+	position:absolute; 
+	margin-top:-7px; 
+	margin-left:-25px;
+}
+.math sup.nrad2{
+	position:absolute; 
+	margin-top:-7px;
+}
+
+.math sup.nrad3{
+	position:absolute; 
+	margin-top:8px; 
+}
+.math sup.nrad4{
+	position:absolute; 
+	margin-top:8px; 
+	margin-left:-2px;
+	margin-top:-8px; 
+}
+
+.math sup.nrad5{
+	position:absolute;
+	margin-top:-7px;	
+	margin-left:20px;
+}
+/*
+.math span.radicalSym > .normal{
+	font-size:90% !important;
+*/
+.math span.mDecimal{
+	border-top:1px #000000 solid;
+}
+.math span.mdot{
+	font-weight:bold;
+}
+
+.math .mfrac {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    text-align: center !important;
+	margin:0px 2px;
+}
+.math .mfrac > span {
+    display: block;
+    padding: 1px;
+	font-size:15px !important;
+	text-indent:0 !important;
+	 text-align: center !important;
+	font-family: "Avgardd_bold" !important;
+}
+.math .mfrac span.bottom {
+    border-top: thin solid black;
+	 text-align: center !important;
+}
+.math .mfrac span.symbol {
+    display: none;
+}
+
+.math .mfracSigma {
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+    text-align: center !important;
+	margin:0px 2px;
+}
+.math .mfracSigma > span {
+    display: block;
+    padding: 1px;
+	font-size:15px !important;
+	text-indent:0 !important;
+	 text-align: center !important;
+	font-family: "Avgardd_bold" !important;
+}
+.math .mfracSigma span.bottom {
+    border-top: thin solid black;
+	 text-align: center !important;
+}
+.math .mfracSigma span.symbol {
+    display: none;
+} 
+
+.math .mfracSigma2 {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    text-align: center !important;
+	margin:0px 2px;
+}
+.math .mfracSigma2 > span {
+    display: block;
+    padding: 1px;
+	font-size:15px !important;
+	text-indent:0 !important;
+	 text-align: center !important;
+	font-family: "Avgardd_bold" !important;
+}
+.math .mfracSigma2 span.bottom {
+    border-top: thin solid black;
+	 text-align: center !important;
+}
+.math .mfracSigma2 span.symbol {
+    display: none;
+} 
+
+.math .mfrac2 {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    text-align: center !important;
+	margin:0px 2px;
+}
+.math .mfrac2 > span {
+    display: block;
+    padding: 1px;
+	font-size:15px !important;
+	text-indent:0 !important;
+	 text-align: center !important;
+	font-family: "Avgardd_bold" !important;
+}
+.math .mfrac2 span.bottom2 {
+	 text-align: center !important;
+}
+.math .mfrac2 span.sigma {
+    font-size:250% !important;
+} 
+.math .mfrac2 span.top {
+	 text-align: center !important;
+} 
+
+.math sup .mfrac {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    text-align: center !important;
+	margin:-5px 0px 0px -3px;
+}
+.math sup  .mfrac > span {
+    display: block;
+    padding: 1px;
+	font-size:10px !important;
+	text-indent:0 !important;
+	 text-align: center !important;
+	font-family: "Avgardd_bold" !important;
+	 line-height:9px;
+}
+
+
+.math .mdesfrac {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    text-align: center;
+	margin-right:2px;
+}
+.math .mdesfrac > span {
+    display: block;
+    padding: 1px;
+	font-size:14px !important;
+	text-indent:0 !important;
+	font-family: "Avgardd_bold" !important;
+}
+.math .mdesfrac span.line {
+   margin-top:-10px;
+}
+.math .mdesfrac span.bottom {
+    /*border-top: thin solid black;*/
+	margin-top:-3px;
+	font-size:80% !important;
+}
+.math .mdesfrac span.symbol {
+    display: block;
+	padding:0px!important;
+	margin-top:-5px;
+} 
+
+.math .mdesfrac2 {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    text-align: center;
+	margin-right:2px;
+}
+.math .mdesfrac2 > span {
+    display: block;
+    padding: 1px;
+	font-size:14px !important;
+	text-indent:0 !important;
+	font-family: "Avgardd_bold" !important;
+}
+.math .mdesfrac2 span.line {
+   margin-top:-15px;
+}
+.math .mdesfrac2 span.bottom {
+    /*border-top: thin solid black;*/
+	margin-top:-3px;
+	font-size:80% !important;
+}
+.math .mdesfrac2 span.symbol {
+    display: block;
+	padding:0px!important;
+	margin-top:-5px;
+} 
+
+.math .mLineSegment {
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+    text-align: center !important;
+	/*margin-top:-15px;*/
+	margin-left:1px;
+	margin-right:1px;
+}
+li div.math .mLineSegment {
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+    text-align: center !important;
+	margin-left:-3px;
+	margin-right:-3px;
+	margin-bottom:0px;
+}
+.math .mLineSegment > span {
+    display: block;
+    padding: 1px;
+	font-size:15px !important;
+	text-indent:0 !important;
+	 text-align: center !important;
+	font-family: "Avgardd_bold" !important;
+	
+}
+.math .mLineSegment span.lineSegment1 {
+	width:25px !important;
+	line-height:5px;
+	/*margin-bottom:-10px;*/
+}
+.math .mLineSegment span.lineSegment1 img {
+	 width:100%;
+	 
+}
+
+.math .mLineSegment span.lineSegment2 {
+	width:20px !important;
+	line-height:5px;
+	/*margin-bottom:-10px;*/
+}
+.math .mLineSegment span.lineSegment2 img {
+	 width:100%;
+}
+
+.math .mLineSegment span.lineSegment3 {
+	width:30px !important;
+	line-height:5px;
+	/*margin-bottom:-10px;*/
+}
+.math .mLineSegment span.lineSegment3 img {
+	 width:100%;
+	 
+}
+
+
+
+.math .mLineSegment span.bottom {
+	 text-align: center !important;
+	  font-style:italic;
+	  line-height:-17px;
+	  margin-top:-5px;
+}
+
+.mathTable .math .mLineSegment span.lineSegment1 img,
+.mathTable .math .mLineSegment span.lineSegment2 img,
+.mathTable .math .mLineSegment span.lineSegment3 img {
+	 width:100%;
+	 margin-bottom:0px !important;
+}
+
+.math span.mPunc{
+	margin-left:-7px;
+}
+.math span.mPunc2{
+	margin-left:-3px;
+}
+.mathNextline{
+	margin-left:30px; 
+	margin-top:5px;
+}
+
+img.planeSymbol{
+	width:15px;
+	margin-top:5px;
+	 vertical-align: middle;
+}
+
+span.curve img{
+	width:6px !important;
+	margin-top:-1px;
+	margin-right:-5px;
+	margin-bottom:-2px;
+	position: absolute;
+}
+.curveline{
+	padding-top:4px;
+	padding-left:10px;
+	margin-left:2px;
+}
+   
+span.mdividend{
+	border-right:2px #000000 solid;
+	border-radius:0px 10px 20px 0px;
+	padding:5px 5px;
+	margin-right:-7px;
+}
+
+
+.peso{
+	font-family: "Avgardd_bold" !important;
+}
+
+/*
+.mRadical{
+	border-top:1px #212121 solid;
+	margin-left:-1px;
+	padding-left:2px;
+	font-size:13px !important;
+}
+.mRadical2{
+	border-top:1px #212121 solid;
+	margin-left:-1px;
+	padding-left:2px;
+	padding-top:3px;
+	font-size:13px !important;
+}
+.mRadical3{
+	border-top:1px #212121 solid;
+	margin-left:-1px;
+	padding-left:2px;
+	padding-top:3px;
+	line-height:15px;
+	font-size:13px !important;
+}*/
+.mDecimal{
+	border-top:1px #000000 solid;
+}
+
+.strikethrough {
+  position: relative;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  padding:0px 5px;
+  border-top: 1px #000000 solid;
+  border-color: inherit;
+
+  -webkit-transform:rotate(-15deg);
+  -moz-transform:rotate(-15deg);
+  -ms-transform:rotate(-15deg);
+  -o-transform:rotate(-15deg);
+  transform:rotate(-15deg);
+}
+.strikethrough2 {
+  position: relative;
+}
+.strikethrough2:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  padding:0px 5px;
+  border-top: 1px #000000 solid;
+  border-color: inherit;
+
+  -webkit-transform:rotate(-25deg);
+  -moz-transform:rotate(-25deg);
+  -ms-transform:rotate(-25deg);
+  -o-transform:rotate(-25deg);
+  transform:rotate(-25deg);
+}
+.strikethrough3 {
+  position: relative;
+}
+.strikethrough3:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 60%;
+  right: 0;
+  padding:0px 5px;
+  border-top: 1px #000000 solid;
+  border-color: inherit;
+
+  -webkit-transform:rotate(-35deg);
+  -moz-transform:rotate(-35deg);
+  -ms-transform:rotate(-35deg);
+  -o-transform:rotate(-35deg);
+  transform:rotate(-35deg);
+}
+
+.strikethrough4 {
+  position: relative;
+}
+.strikethrough4:before {
+  position: absolute;
+  content: "";
+  left: -5px;
+  top: 50%;
+  right: 0;
+  padding:0px 5px;
+  border-top: 1px #000000 solid;
+  border-color: inherit;
+
+  -webkit-transform:rotate(-55deg);
+  -moz-transform:rotate(-55deg);
+  -ms-transform:rotate(-55deg);
+  -o-transform:rotate(-55deg);
+  transform:rotate(-55deg);
+}
+.strikethrough5 {
+  position: relative;
+}
+.strikethrough5:before {
+  position: absolute;
+  content: "";
+  left: -2px;
+  top: 50%;
+  right: 0;
+  padding:0px 5px;
+  border-top: 1px #000000 solid;
+  border-color: inherit;
+
+  -webkit-transform:rotate(-65deg);
+  -moz-transform:rotate(-65deg);
+  -ms-transform:rotate(-65deg);
+  -o-transform:rotate(-65deg);
+  transform:rotate(-65deg);
+}
+.strikethrough6 {
+  position: relative;
+}
+.strikethrough6:before {
+  position: absolute;
+  content: "";
+  left: -2px;
+  top: 50%;
+  right: 0;
+  padding:0px 5px;
+  border-top: 1px #000000 solid;
+  border-color: inherit;
+
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -ms-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);
+  transform:rotate(-5deg);
+}
+
+.strikethrough7 {
+  position: relative;
+}
+.strikethrough7:before {
+  position: absolute;
+  content: "";
+  left: -12px;
+  top: 50%;
+  right: 0;
+  width:25px;
+  padding:0px 5px;
+  border-top: 1px #000000 solid;
+  border-color: inherit;
+
+  -webkit-transform:rotate(-80deg);
+  -moz-transform:rotate(-60deg);
+  -ms-transform:rotate(-60deg);
+  -o-transform:rotate(-60deg);
+  transform:rotate(-80deg);
+}
+
+
+
+/*custom style*/
+.block, .imgHolder{
+	display:block;
+}
+
+div.imgHolder img{
+	margin-bottom: 10px !important;
+}
+
+h1.header{
+	/*font-family: "Briquet" !important;*/
+	color:#02aaea;
+	font-size:40px !important;
+	line-height:50px !important;
+	display:block;
+	width:100%;
+	text-align:center !important;
+	padding:30px 0px 10px 0px;
+	margin-bottom:0px;
+	border-bottom:3px #02aaea solid;
+}
+h1.header2{
+	/*font-family: "Briquet" !important;*/
+	color:#02aaea;
+	font-size:30px !important;
+	line-height:35px;
+	display:block;
+	width:100%;
+	text-align:center !important;
+	padding:30px 0px 10px 0px;
+	margin-bottom:20px;
+	border-bottom:4px #212121 solid;
+}
+h1.header3{
+	/*font-family: "BERNHC_0" !important;*/
+	color:#02aaea;
+	font-size:30px !important;
+	line-height:35px;
+	display:block;
+	width:100%;
+	text-align:center !important;
+	padding:30px 0px 10px 0px;
+	margin-bottom:20px;
+	border-bottom:4px #02aaea solid;
+}
+
+h1.chapheader{
+	font-family: "VAGRON" !important;
+	color:#00aeef;
+	font-size:35px !important;
+	line-height:40px;
+	display:block;
+	width:90%;
+	text-align:left !important;
+	padding:10px 0px 10px 0px;
+	margin-bottom:20px;
+}
+h1.lessonTitle{
+	font-family: "BERNHC" !important;
+	color:#00aeef;
+	font-size:35px !important;
+	line-height:40px;
+	display:block;
+	width:90%;
+	text-align:left !important;
+	padding:10px 0px 10px 0px;
+	margin-bottom:0px;
+}
+
+#lessonTitle{
+	/*font-family: "Briquet" !important;*/
+	color:#02aaea !important;
+	font-size:35px !important;
+	line-height:80% !important;
+	display:block;
+	width:100%;
+	text-align:left !important;
+	padding:0px 0px 10px 0px;
+	margin-bottom:0px;
+}
+
+h2.lessonheader{
+	/*font-family: "helvetica-condensed" !important;*/
+	font-size:18px !important;
+	display:block;
+	line-height:23px;
+	width:100%;
+	text-align:left !important;
+	padding:30px 0px 0px 0px;
+	margin-bottom:0px;
+	border-bottom:1px #00aeef solid;
+}
+h2.lessonheader span{
+	font-size:25px !important;
+	line-height:30px;
+}
+h2.topic{
+	text-align:center;
+	color:#02aaea!important;
+	font-size:25px;
+	line-height:30px;
+	padding:20px 10px;
+  
+}
+
+h3{
+	color:#02aaea!important;
+	text-align:center;
+	margin:0px;
+	font-size:20px;
+	line-height:25px;
+}
+h3.category{
+	color:#d2232a !important;
+	font-weight:bold !important;
+	 font-family: "VAGRON" !important;
+	 text-align:left;
+}
+
+h3.subtopic{
+	color:#02aaea!important;
+	font-size:20px;
+	line-height:25px;
+	text-align:left!important;
+	margin:40px 0px 10px 0px;
+}
+h3.actCategory{
+	/*font-family: "BERNHC_0" !important;*/
+	color:#02aaea !important;
+	font-size:20px;
+	line-height:40px;
+	text-align:left !important;
+	margin:40px 0px 10px 0px;
+}
+div.subtopic2{
+	/*font-family: "helvetica-condensed" !important;*/
+	text-align:left!important;
+	font-weight:bold;
+	margin-top:20px;
+}
+
+div.headerHolder{
+	text-align:center;
+	padding:0px 0px 2px 0px;
+}
+div.headerHolder2{
+	text-align:center;
+	padding:0px 0px 2px 0px;
+	/*border-bottom:1px #02aaea solid;*/
+}
+.actheaderHolder{
+	text-align:center;
+	width:90%;
+	margin:20px auto;
+}
+div.chapheaderHolder{
+	text-align:center;
+	padding:0px 0px 2px 0px;
+}
+
+div.lessonheaderHolder{
+	text-align:left;
+	padding:0px 0px 2px 0px;
+}
+div.lessonTitleHolder{
+	text-align:left;
+	padding:0px 0px 2px 0px;
+}
+
+table.imgdescriptionHolder{
+	display:block;
+}
+table.imgdescriptionHolder td{
+	vertical-align:text-top !important;
+	padding-top:10px !important;
+}
+div.imgdesFigure{
+	font-weight:bold !important;
+	font-size:13px !important;
+	line-height:18px;
+	/*font-family: "helvetica-condensed" !important;*/
+	width:80px;
+}
+
+
+p.imgdescription, div.imgdescription, div.imgdescription .inline div{
+	font-size:13px !important;
+	line-height:18px;
+	/*font-family: "helvetica-condensed" !important;*/
+}
+div.imgdescription .math span{
+	/*font-family: "helvetica-condensed" !important;*/
+	font-size:80% !important;
+}
+
+div.imgdescription .math span, div.imgdescription em{
+	/*font-family: "helvetica-condensed" !important;*/
+}
+p.imgdescription2, div.imgdescription2{
+	padding-top:10px;
+	font-size:13px !important;
+	line-height:18px;
+	/*font-family: "helvetica-condensed" !important;*/
+	padding-left:65px;
+	text-indent:-65px;
+}
+
+div.imgdescription .math span.lineSegment1, 
+div.imgdescription .math span.lineSegment2{
+}
+
+div.imgdescription .math span.lineSegment1 img, 
+div.imgdescription .math span.lineSegment2 img{
+	width:20px;
+	margin-bottom:0px !important;
+}
+
+div.imgdescription .math span.bottom{
+	font-size:90% !important;
+}
+
+p.imgtitle{
+	padding:10px 0px;
+	font-weight:bold;
+	text-align:center !important;
+}
+
+div.steps{
+	font-family: "Avgardn_normal" !important;
+	color:#02aaea;
+	text-align:left;
+	font-weight:bold;
+}
+
+div.example{
+	font-family: "Avgardn_normal" !important;
+	color:#02aaea;
+	text-align:left;
+	margin-top:30px;
+	margin-bottom:10px;
+	font-weight:bold;
+}
+div.solution{
+	font-family: "Avgardn_normal" !important;
+	color:#02aaea;
+	text-align:left;
+	margin-top:30px;
+	margin-bottom:10px;
+	font-weight:bold;
+}
+
+div.activity{
+	font-family: "Avgardn_normal" !important;
+	color:#02aaea;
+	text-align:left;
+	margin-top:30px;
+	margin-bottom:10px;
+	font-weight:bold;
+}
+
+span.step{
+	font-family: "Avgardn_normal" !important;
+	color:#02aaea;
+	text-align:left;
+	font-weight:bold;
+	margin-right:20px;
+}
+
+span.definition{
+	font-family: "Avgardn_normal" !important;
+	color:#02aaea;
+	text-align:left;
+	font-weight:bold;
+	margin-right:20px;
+
+}
+.firstLetter{
+	font-size: 120%;
+}
+
+
+
+.topicHolder, #topic1, #topic2, #topic3, #topic4, #topic5, #topic6, #topic7, #topic8, #topic9, #topic10{
+	background-color:#cfeefb !important;
+	border-radius: 25px 25px 0px 0px;
+	text-align:center;
+	margin:20px auto 10px auto;
+	width:90%;
+}
+
+
+.instruction{
+	font-family: "Avgardn_normal" !important;
+	text-indent: 25px !important;
+	text-align:left !important;
+	margin-bottom:10px;
+}
+
+
+.box1 li p{
+	/*font-family: "helvetica-condensed" !important;*/
+	text-align:left;
+	text-justify:none;
+}
+
+.choices{
+	margin-bottom:20px;
+	margin-left:5px;
+}
+
+.actHeader{
+	/*font-family: "Briquet" !important;*/
+	color:#02aaea !important;
+	font-size:35px !important;
+	line-height:40px;
+	display:block;
+	width:100%;
+	text-align:center !important;
+	padding:30px 0px 10px 0px;
+	margin-bottom:0px;
+	border-bottom:4px #212121 solid !important;
+}
+/*
+.thickLine{
+	border-bottom:3px #02aaea solid;
+	margin:2px 0px;
+	width:100%;
+}
+
+.thinLine{
+	border-bottom:1px #02aaea solid;
+	margin:1px 0px;
+	width:100%;
+}
+*/
+.tocChapter{
+	width:100%;
+	margin:20px 0px;
+}
+.tocChapter img{
+	width:90%;
+	max-width:450px !important;
+}
+
+.lesson{
+	line-height:24px;
+	font-size:20px;
+	color:#00aeef !important;
+	font-family: "VAGRON" !important;
+	font-weight:bold;
+	vertical-align:text-top;
+}
+
+.line{
+	border-top: 3px #02aaea solid; 
+	padding-top:30px; 
+	margin-top:30px !important;
+}
+
+
+div.popupHolder{
+	text-align:center;
+	display:block;
+	width:95%;
+}
+.popupTitle{
+	/*font-family: "Briquet" !important;*/
+	color:#ffffff !important;
+	background-color:#02aaea !important;
+	font-size:25px !important;
+	padding:10px 0px;
+	border-radius: 20px 20px 0px 0px;
+	width:150px;
+	text-align:center !important;
+	position:relative;
+	margin:0px auto;
+}
+
+.popupBox{
+	background-color:#cfeefb !important;
+	border:1px #63cdf3 solid;
+	border-radius:0px 25px 0px 25px;
+	padding:30px 20px 20px 20px;
+	margin-top:-20px;
+	position:inherit;
+}
+
+.borderBottom{
+	border-bottom:2px #02aaea solid;
+}
+
+
+
+
+span.whiteSpace{ white-space:nowrap !important;}
+
+
+.column1{
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+  -moz-column-count: 1; /* Firefox */
+  column-count: 1;
+  -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 20px; /* Firefox */
+  column-gap: 20px;
+  margin-left:40px;
+  text-align:left !important;
+}
+
+.column2{
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 20px; /* Firefox */
+  column-gap: 20px;
+  text-align:left !important;
+}
+
+
+.stepHolder, .definitionHolder{
+	margin-left:25px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.stepHolder table div, .definitionHolder table div{
+	text-align:left !important;
+}
+
+div.centerAlign{
+	margin:30px auto !important;
+	width:90% !important; 
+	max-width:400px !important;
+	display:block !important;
+	padding:10px 0px;
+}
+div.centerAlign2{
+	margin:30px auto !important;
+	width:90% !important; 
+	display:block !important;
+	padding:20px 0px;
+}
+div.centerAlign3{
+	margin:10px auto !important;
+	width:90% !important; 
+	max-width:400px !important;
+	display:block !important;
+	padding:10px 0px;
+}
+div.defenitionHolder{
+	margin:25px !important;
+}
+div.defenition{
+	
+}
+div.defenition strong{
+	margin-right:20px;
+	color:#02aaea !important;
+}
+div.defenition strong.normal{
+	margin-right:0px !important;
+	color:#000000 !important;
+}
+div.defenition em{
+	color:#000000 !important;
+}
+
+.pinklabel{
+	color:#02aaea !important;
+	font-weight:bold;
+	font-size:80%;
+}
+.blacklabel{
+	color:#000000 !important;
+	font-size:80%;
+}
+
+ul.listChoices{
+	list-style-type: lower-alpha !important;
+	margin-bottom:30px !important;
+	margin-left:-15px !important;
+}
+ul.listChoices li{
+	padding-left:10px;
+}
+
+ul.listChoices li div{
+	margin:5px 0px !important;
+}
+
+div.synDivFirst{
+	border-right:1px #000000 solid;
+	border-bottom:1px #000000 solid;
+	padding:3px 10px 3px 10px;
+	text-align:right !important;
+	margin-right:10px;
+}
+
+@media (max-width: 450px){
+	.w90{width:280px !important; }
+	.w75{width:250px !important; }
+	.w50{width:200px !important; }
+	div.centerAlign{ 
+		max-width:300px !important;
+	}
+	.column2{
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+	  -moz-column-count: 1; /* Firefox */
+	  column-count: 1;
+	}
+}
+
+@media (max-width: 380px){
+	.column2{
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+	  -moz-column-count: 1; /* Firefox */
+	  column-count: 1;
+	}
+	
+	body {
+		line-height:17px;
+	}
+	h1.header{
+		font-size:30px !important;
+		line-height:35px;
+	}
+	h1.chapheader{
+		font-size:30px !important;
+		line-height:35px;
+	}
+	h1.lessonTitle{
+		font-size:30px !important;
+		line-height:35px !important;
+	}
+	h2.topic{
+		font-size:18px;
+		line-height:23px;
+	}
+	h3{
+		font-size:18px;
+		line-height:23px;
+	}
+	h3.subtopic{
+		font-size:18px;
+		line-height:20px;
+	}
+	h3.actCategory{
+		font-size:18px;
+		line-height:30px;
+	}
+	
+	
+	.popupHolder table.w75{
+		max-width:300px;
+	}
+	.popupTitle{
+		font-size:18px !important;
+	}
+	.w90{width:300px !important; }
+	.w75{width:250px !important; }
+	.w50{width:200px !important; }
+	
+	.frac > span {
+		font-size:10px !important;
+	}
+	
+	ul li p, ol li p, ul li div, ol li div{
+		margin: 5px 10px;
+	}
+	.math{
+		white-space:normal !important;
+	}
+	div.centerAlign{
+		max-width:300px !important;
+	}
+}

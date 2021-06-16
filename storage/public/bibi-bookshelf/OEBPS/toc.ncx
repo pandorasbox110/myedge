@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+	<head>
+		<meta name="dtb:uid" content="urn:uuid:ISBN9786214051694" />
+		<meta name="dtb:depth" content="0" />
+		<meta name="dtb:totalPageCount" content="0" />
+		<meta name="dtb:maxPageNumber" content="0" />
+	</head>
+	<docTitle>
+		<text>math K2</text>
+	</docTitle>
+	<navMap>
+		<navPoint id="navpoint1" playOrder="1">
+			<navLabel>
+				<text>CoverImage</text>
+			</navLabel>
+			<content src="CoverImage.xhtml" />
+		</navPoint>
+		<navPoint id="navpoint2" playOrder="2">
+			<navLabel>
+				<text>Copyright</text>
+			</navLabel>
+			<content src="copyright.xhtml" />
+		</navPoint>
+		<navPoint id="navpoint3" playOrder="3">
+			<navLabel>
+				<text>Table Of Contents</text>
+			</navLabel>
+			<content src="table_of_contents.xhtml" />
+		</navPoint>
+		<navPoint id="navpoint4" playOrder="4">
+			<navLabel>
+				<text>Preface</text>
+			</navLabel>
+			<content src="preface.xhtml" />
+		</navPoint>
+
+		<navPoint id="navpoint5" playOrder="5">
+			<navLabel>
+				<text>Unit 1: Numbers</text>
+			</navLabel>
+			<content src="unit1/U1.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint6" playOrder="6">
+			<navLabel>
+				<text>Lesson 1: Numbers 1 to 100</text>
+			</navLabel>
+			<content src="unit1/U1L1.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint7" playOrder="7">
+			<navLabel>
+				<text>Lesson 2: Tens and Ones</text>
+			</navLabel>
+			<content src="unit1/U1L2.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint8" playOrder="8">
+			<navLabel>
+				<text>Lesson 3: Number Before a Given Number</text>
+			</navLabel>
+			<content src="unit1/U1L3.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint9" playOrder="9">
+			<navLabel>
+				<text>Lesson 4: Number After a Given Number</text>
+			</navLabel>
+			<content src="unit1/U1L4.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint10" playOrder="10">
+			<navLabel>
+				<text>Lesson 5: Number Between Two Given Numbers</text>
+			</navLabel>
+			<content src="unit1/U1L5.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint11" playOrder="11">
+			<navLabel>
+				<text>Lesson 6: Less Than and More Than</text>
+			</navLabel>
+			<content src="unit1/U1L6.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint12" playOrder="12">
+			<navLabel>
+				<text>Lesson 7: Greater Than, Less than, or Equal to</text>
+			</navLabel>
+			<content src="unit1/U1L7.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint13" playOrder="13">
+			<navLabel>
+				<text>Lesson 8: Order of Numbers</text>
+			</navLabel>
+			<content src="unit1/U1L8.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint14" playOrder="14">
+			<navLabel>
+				<text>Lesson 9: One-More Order</text>
+			</navLabel>
+			<content src="unit1/U1L9.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint15" playOrder="15">
+			<navLabel>
+				<text>Lesson 10: One-Less Order</text>
+			</navLabel>
+			<content src="unit1/U1L10.xhtml" />
+		</navPoint>
+		
+		
+		
+		<navPoint id="navpoint16" playOrder="16">
+			<navLabel>
+				<text>Unit 2: More About Numbers</text>
+			</navLabel>
+			<content src="unit2/U2.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint17" playOrder="17">
+			<navLabel>
+				<text>Lesson 1: Number Words One to Ten</text>
+			</navLabel>
+			<content src="unit2/U2L1.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint18" playOrder="18">
+			<navLabel>
+				<text>Lesson 2: Number Words Eleven to</text>
+			</navLabel>
+			<content src="unit2/U2L2.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint19" playOrder="19">
+			<navLabel>
+				<text>Lesson 3: Number Words Tens to Hundreds</text>
+			</navLabel>
+			<content src="unit2/U2L3.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint20" playOrder="20">
+			<navLabel>
+				<text>Lesson 4: Ordinal Numbers</text>
+			</navLabel>
+			<content src="unit2/U2L4.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint21" playOrder="21">
+			<navLabel>
+				<text>Lesson 5: Odd and Even Numbers</text>
+			</navLabel>
+			<content src="unit2/U2L5.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint22" playOrder="22">
+			<navLabel>
+				<text>Lesson 6: Roman Numerals</text>
+			</navLabel>
+			<content src="unit2/U2L6.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint23" playOrder="23">
+			<navLabel>
+				<text>Lesson 7: Skip Counting by 2s</text>
+			</navLabel>
+			<content src="unit2/U2L7.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint24" playOrder="24">
+			<navLabel>
+				<text>Lesson 8: Skip Counting by 5s</text>
+			</navLabel>
+			<content src="unit2/U2L8.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint25" playOrder="25">
+			<navLabel>
+				<text>Lesson 9: Skip Counting by 10s</text>
+			</navLabel>
+			<content src="unit2/U2L9.xhtml" />
+		</navPoint>
+		
+		
+		
+		<navPoint id="navpoint26" playOrder="26">
+			<navLabel>
+				<text>Unit 3: Addition</text>
+			</navLabel>
+			<content src="unit3/U3.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint27" playOrder="27">
+			<navLabel>
+				<text>Lesson 1: Addition with Sums Up to 10</text>
+			</navLabel>
+			<content src="unit3/U3L1.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint28" playOrder="28">
+			<navLabel>
+				<text>Lesson 2: Addition Using a Number Line</text>
+			</navLabel>
+			<content src="unit3/U3L2.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint29" playOrder="29">
+			<navLabel>
+				<text>Lesson 3: Addition with Sums Up to 18</text>
+			</navLabel>
+			<content src="unit3/U3L3.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint30" playOrder="30">
+			<navLabel>
+				<text>Lesson 4: Addition with Three Addends</text>
+			</navLabel>
+			<content src="unit3/U3L4.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint31" playOrder="31">
+			<navLabel>
+				<text>Lesson 5: Addition of 2-Digit Numbers</text>
+			</navLabel>
+			<content src="unit3/U3L5.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint32" playOrder="32">
+			<navLabel>
+				<text>Lesson 6: Word Problems on Addition</text>
+			</navLabel>
+			<content src="unit3/U3L6.xhtml" />
+		</navPoint>
+		
+		
+		
+		<navPoint id="navpoint33" playOrder="33">
+			<navLabel>
+				<text>Unit 4: Subtraction</text>
+			</navLabel>
+			<content src="unit4/U4.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint34" playOrder="34">
+			<navLabel>
+				<text>Lesson 1: Subtraction from 10 or Less</text>
+			</navLabel>
+			<content src="unit4/U4L1.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint35" playOrder="35">
+			<navLabel>
+				<text>Lesson 2: Subtraction Using a Number Line</text>
+			</navLabel>
+			<content src="unit4/U4L2.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint36" playOrder="36">
+			<navLabel>
+				<text>Lesson 3: Subtraction from 15 or Less</text>
+			</navLabel>
+			<content src="unit4/U4L3.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint37" playOrder="37">
+			<navLabel>
+				<text>Lesson 4: Subtraction of a 1-Digit Number from a 2-Digit Number</text>
+			</navLabel>
+			<content src="unit4/U4L4.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint38" playOrder="38">
+			<navLabel>
+				<text>Lesson 5: Subtraction of 2-Digit Numbers</text>
+			</navLabel>
+			<content src="unit4/U4L5.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint39" playOrder="39">
+			<navLabel>
+				<text>Lesson 6: Word Problems on Subtraction</text>
+			</navLabel>
+			<content src="unit4/U4L6.xhtml" />
+		</navPoint>
+		
+		
+		
+		<navPoint id="navpoint40" playOrder="40">
+			<navLabel>
+				<text>Unit 5: Fractions</text>
+			</navLabel>
+			<content src="unit5/U5.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint41" playOrder="41">
+			<navLabel>
+				<text>Lesson 1: One Part of a Whole</text>
+			</navLabel>
+			<content src="unit5/U5L1.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint42" playOrder="42">
+			<navLabel>
+				<text>Lesson 2: Two or More Parts of a Whole</text>
+			</navLabel>
+			<content src="unit5/U5L2.xhtml" />
+		</navPoint>
+		
+		
+		<navPoint id="navpoint43" playOrder="43">
+			<navLabel>
+				<text>Unit 6: Days and Months</text>
+			</navLabel>
+			<content src="unit6/U6.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint44" playOrder="44">
+			<navLabel>
+				<text>Lesson 1: Days of the Week</text>
+			</navLabel>
+			<content src="unit6/U6L1.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint45" playOrder="45">
+			<navLabel>
+				<text>Lesson 2: Months of the Year</text>
+			</navLabel>
+			<content src="unit6/U6L2.xhtml" />
+		</navPoint>
+		
+		
+		<navPoint id="navpoint46" playOrder="46">
+			<navLabel>
+				<text>Unit 7: Time</text>
+			</navLabel>
+			<content src="unit7/U7.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint47" playOrder="47">
+			<navLabel>
+				<text>Lesson 1: Time by the Hour</text>
+			</navLabel>
+			<content src="unit7/U7L1.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint48" playOrder="48">
+			<navLabel>
+				<text>Lesson 2: Time by the Half Hour</text>
+			</navLabel>
+			<content src="unit7/U7L2.xhtml" />
+		</navPoint>
+		
+		
+		
+		<navPoint id="navpoint49" playOrder="49">
+			<navLabel>
+				<text>Unit 8: Money</text>
+			</navLabel>
+			<content src="unit8/U8.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint50" playOrder="50">
+			<navLabel>
+				<text>Lesson 1: Philippine Coins and Notes</text>
+			</navLabel>
+			<content src="unit8/U8L1.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint51" playOrder="51">
+			<navLabel>
+				<text>Lesson 2: Word Problems About Money</text>
+			</navLabel>
+			<content src="unit8/U8L2.xhtml" />
+		</navPoint>
+		
+		
+		
+		<navPoint id="navpoint52" playOrder="52">
+			<navLabel>
+				<text>Unit 9: Measurements and Shapes</text>
+			</navLabel>
+			<content src="unit9/U9.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint53" playOrder="53">
+			<navLabel>
+				<text>Lesson 1: Length</text>
+			</navLabel>
+			<content src="unit9/U9L1.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint54" playOrder="54">
+			<navLabel>
+				<text>Lesson 2: Height</text>
+			</navLabel>
+			<content src="unit9/U9L2.xhtml" />
+		</navPoint>
+		
+		<navPoint id="navpoint55" playOrder="55">
+			<navLabel>
+				<text>Lesson 3: Shapes</text>
+			</navLabel>
+			<content src="unit9/U9L3.xhtml" />
+		</navPoint>
+		
+		
+		<navPoint id="navpoint56" playOrder="56">
+			<navLabel>
+				<text>Author</text>
+			</navLabel>
+			<content src="author.xhtml" />
+		</navPoint>
+		
+		
+	</navMap>
+</ncx>

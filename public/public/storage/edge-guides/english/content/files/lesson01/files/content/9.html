@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Possessive Nouns</title>
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/topic1_tutorial2.css"/>
+</head>
+
+<body id="body">
+
+    <div id="body_bg_left" class="show"></div>
+    <div id="body_bg_right" class="show"></div>
+    <div id="body_bg_popup"></div>
+
+    <div class="body">
+    
+        <div class="body_slideshow">
+        
+        <!-- MAIN -->
+        <div class="body_slide show" id="main">
+            
+            <!-- Submenu @top of page -->
+            <div id="submenu_header">
+                <input type="button" class="submenu_button" id="objectives_button2" onclick="showObjectives()" value="Objectives"/>
+            </div>
+            
+            <!-- Header -->
+            <div id="main_header">
+                <div id="main_icon"></div>
+                <div id="main_title">
+                    <h1>Possessive Nouns</h1>
+                </div>
+            </div>
+            
+            <!-- Main Content -->
+            <div id="main_content">
+            
+            <!-- Navigation -->
+            <div id="main_nav">
+                <input type="button" class="nav_button" value="Introduction" id="0"/>
+                <input type="button" class="nav_button" value="Rules in Forming Possessive Nouns" id="1"/>
+                <select id="main_submenu">
+                    <option>Introduction</option>
+                    <option>Rules in Forming Possessive Nouns</option>
+                </select>
+            </div>
+            
+            <!-- Discussion slides -->
+            <div id="discussion_slideshow">
+                
+				<!-- Introduction -->
+                <div class="discussion_slide show" id="0">
+                <div class="topic1slide slide slideshow show">
+                    <p>Read the following sentences:</p>
+                    <div class="topic1item"><ul><li><p>The screams of the <span class="em7">girl</span> could be heard in the corridor.</p></li></ul></div>
+                    <div class="topic1item"><ul><li><p>The friends of <span class="em7">Jerry</span> decided to go sailing.</p></li></ul></div>
+                    <div class="topic1item"><p>These sentences show possession in a rather long way. Now, read the following:</p></div>
+                    <div class="topic1item"><ul><li><p>The <span class="em7">girl's</span> screams could be heard in the corridor.</p></li></ul></div>
+                    <div class="topic1item"><ul><li><p><span class="em7">Jerry's</span> friends decided to go sailing.</p></li></ul></div>
+                    <div class="topic1item"><p><span class="em7">Girl's</span> and <span class="em7">Jerry's</span> are <span class="em5">possessive nouns</span>. A <em>possessive noun</em> shows <em>possession</em>. It changes its form to show that <em>it owns</em> or <em>is closely related to something else</em>.</p></div>
+                </div>
+                </div>
+                
+				</div> <!-- end of discussion_slideshow -->
+            
+            </div> <!-- end of main_content -->
+ 
+            <!-- Footer -->
+            <div id="discussion_footer">            
+                <input type="button" id="prev" class="disabled" onclick="prev()"/> 
+                <input type="button" id="next" class="disabled" onclick="next()"/>
+            </div><!-- end of footer -->
+            
+        <div id="edupower"></div>   
+            
+        </div> <!-- end of main -->
+            
+        <!-- OBJECTIVES -->    
+        <div class="popup" id="objectives">
+            <div class="popup_close" id="objectives_close"
+            onclick="closeObjectives()">X</div>
+            <div class="popup_content">
+                <div id="popup_icon"></div>
+                <div id="popup_header">
+                    <h1>In this lesson, you will learn to:</h1>
+                </div>
+				<p><ul>
+                    <li>Identify and use possessive nouns</li>
+                </ul></p>
+            </div>
+        </div> <!-- end of objectives -->
+
+        </div>
+    </div>
+	
+    <script type="text/javascript" src="../script.js"></script>
+    <script type="text/javascript" src="../js/topic1_tutorial2.js"></script>
+	<script type="text/javascript">
+		showSlide(0);
+	</script>
+    <script type="text/javascript" src="../../../jquery.js"></script>
+    <script>        
+        $(document).ready(function(){
+            sChange();
+        });
+        window.onresize = function(event) {
+            sChange();
+        };
+        function sChange() {
+            var x = $("body").innerHeight();
+            $("#main_content").height(x - 250);
+        }
+    </script>
+    
+</body>
+
+</html>

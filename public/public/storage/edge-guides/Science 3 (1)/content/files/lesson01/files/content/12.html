@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Properties of Nouns</title>
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/topic1_tutorial3.css"/>
+</head>
+
+<body id="body">
+
+    <div id="body_bg_left" class="show"></div>
+    <div id="body_bg_right" class="show"></div>
+    <div id="body_bg_popup"></div>
+	
+    <div class="body">
+    
+        <div class="body_slideshow">
+        
+        <!-- MAIN -->
+        <div class="body_slide show" id="main">
+            
+            <!-- Submenu @top of page -->
+            <div id="submenu_header">
+                <input type="button" class="submenu_button" id="objectives_button2" onclick="showObjectives()" value="Objectives"/>
+            </div>
+            
+            <!-- Header -->
+            <div id="main_header">
+                <div id="main_icon"></div>
+                <div id="main_title">
+                    <h1>Properties of Nouns</h1>
+                </div>
+            </div>
+            
+            <!-- Main Content -->
+            <div id="main_content">
+            
+            <!-- Navigation -->
+            <div id="main_nav">
+                <input type="button" class="nav_button" value="Gender" id="0"/>
+                <input type="button" class="nav_button" value="Number" id="1"/>
+                <input type="button" class="nav_button" value="Irregular Nouns" id="2"/>
+                <select id="main_submenu">
+                    <option>Gender</option>
+                    <option>Number</option>
+                    <option>Irregular Nouns</option>
+                </select>
+            </div>
+            
+            <!-- Discussion slides -->
+            <div id="discussion_slideshow">
+                
+				<!-- Gender -->
+                <div class="discussion_slide show" id="0">
+                <div class="topic1slide slide slideshow show">
+                    <div class="topic1item"><p>Nouns also have <span class="em5">gender</span>.</p></div>
+                    <div class="topic1item"><p>Nouns that <em>refer to the male</em> gender are in the <span class="em5">masculine</span> form - <span class="em7">emperor</span>, <span class="em7">gander</span>, <span class="em7">groom</span>, <span class="em7">men</span>, <span class="em7">nephew</span>, <span class="em7">boy</span>, <span class="em7">landlord</span>, etc.</p></div>
+                    <div class="topic1item"><p>Nouns that <em>refer to the female</em> gender are in the <span class="em5">feminine</span> form - <span class="em7">girl</span>, <span class="em7">mother</span>, <span class="em7">goddess</span>, <span class="em7">niece</span>, <span class="em7">aunt</span>, <span class="em7">duck</span>, <span class="em7">queen</span>, etc.</p></div>
+                    <div class="topic1item"><p>Nouns that <em>refer to living things but may be either male or female</em> are said to be of the <span class="em5">common gender</span> - <span class="em7">educator</span>, <span class="em7">orator</span>, <span class="em7">lawyer</span>, <span class="em7">teacher</span>, <span class="em7">neighbor</span>, <span class="em7">pig</span>, <span class="em7">fowl</span>, <span class="em7">cattle</span>, etc.</p></div>
+                    <div class="topic1item"><p>Nouns that <em>refer to nonliving things and plants</em> are in the <span class="em5">neuter gender</span> - <span class="em7">table</span>, <span class="em7">chair</span>, <span class="em7">book</span>, <span class="em7">tree</span>, <span class="em7">shrub</span>, etc.</p></div>
+                </div>
+                </div>
+				
+			</div> <!-- end of discussion_slideshow -->
+            </div> <!-- end of main_content -->
+ 
+            <!-- Footer -->
+            <div id="discussion_footer">            
+                <input type="button" id="prev" class="disabled" onclick="prev()"/> 
+                <input type="button" id="next" class="disabled" onclick="next()"/>
+            </div><!-- end of footer -->
+            
+        <div id="edupower"></div>   
+            
+        </div> <!-- end of main -->
+            
+        <!-- OBJECTIVES -->    
+        <div class="popup" id="objectives">
+            <div class="popup_close" id="objectives_close"
+            onclick="closeObjectives()">X</div>
+            <div class="popup_content">
+                <div id="popup_icon"></div>
+                <div id="popup_header">
+                    <h1>In this lesson, you will learn to:</h1>
+                </div>
+				<p><ul>
+                    <li>Identify and use the gender of nouns</li>
+                    <li>Form the plural of nouns</li>
+                </ul></p>
+            </div>
+        </div> <!-- end of objectives -->
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="../script.js"></script>
+    <script type="text/javascript" src="../js/topic1_tutorial3.js"></script>
+    <script type="text/javascript">
+		showSlide(0);
+	</script>
+    <script type="text/javascript" src="../../../jquery.js"></script>
+    <script>        
+        $(document).ready(function(){
+            sChange();
+        });
+        window.onresize = function(event) {
+            sChange();
+        };
+        function sChange() {
+            var x = $("body").innerHeight();
+            $("#main_content").height(x - 250);
+        }
+    </script>
+    
+</body>
+
+</html>

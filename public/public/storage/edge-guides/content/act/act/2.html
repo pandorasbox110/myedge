@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Common Materials</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/jquery.lightbox.css" rel="stylesheet">
+<link rel='stylesheet' type="text/css" media="all" href='css/sweetalert.css' />
+<script src="js/sweetalert-dev.js"></script>
+    
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.js"></script>   
+    <style type="text/css" media="screen">
+		@import url( style.css );
+        
+        /*
+        .question {
+            margin-left: 30px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        */
+        
+        .question input {
+            margin-left: 20px;
+            padding: 10px 5px;
+        }
+        
+        .tab-pane {
+            padding: 0px 4px;
+        }
+        
+        .nav-tabs { border-bottom: 1px solid #eee; }
+            .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+            .nav-tabs > li > a { border: none; color: #f0ad4e; }
+                .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #ec971f !important; background: transparent; }
+                .nav-tabs > li > a::after { content: ""; background: #ec971f; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+            .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+        .tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+        .tab-pane { padding: 15px 0; }
+        .tab-content{padding:20px}
+	</style>
+    
+    <script src="../scormfunctions.js" type="text/javascript"></script>
+    
+</head>   
+    
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top container">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" style="margin-top: -20px;" href="#">Common Materials</a>
+        </div>
+    </div>
+</nav>  
+    
+<div id="mainCont" class="container mainCont">  
+    
+    
+    <div class="container-fluid">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#menu1" id="btn1">Set 1</a></li>
+            <li><a data-toggle="tab" href="#menu2" id="btn2">Set 2</a></li>
+            <li><a data-toggle="tab" href="#menu3" id="btn3">Set 3</a></li>
+            <li><a data-toggle="tab" href="#submit" id="btn4">Finish</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="menu1" class="tab-pane fade in active">
+            <h4>Choose the correct answer for each question.</h4>
+                <ol>
+                    <li> 
+                        <p>
+                            <b id="qn1">metal</b>
+                        </p>
+                        <label><input type="radio" name="q1" value="a" selans="solid"> solid</label><br>
+                        <label><input type="radio" name="q1" value="b" selans="liquid"> liquid</label><br>
+                        <label><input type="radio" name="q1" value="c" selans="gas"> gas</label><br>
+                    </li>
+                    <li> 
+                        <p>
+                            <b id="qn2">water vapor</b>
+                        </p>
+                        <label><input type="radio" name="q2" value="a" selans="solid"> solid</label><br>
+                        <label><input type="radio" name="q2" value="b" selans="liquid"> liquid</label><br>
+                        <label><input type="radio" name="q2" value="c" selans="gas"> gas</label><br>
+                    </li>
+                    <li> 
+                        <p>
+                            <b id="qn3">air</b>
+                        </p>
+                        <label><input type="radio" name="q3" value="a" selans="solid"> solid</label><br>
+                        <label><input type="radio" name="q3" value="b" selans="liquid"> liquid</label><br>
+                        <label><input type="radio" name="q3" value="c" selans="gas"> gas</label><br>
+                    </li>
+                    <li> 
+                        <p>
+                            <b id="qn4">lotion</b>
+                        </p>
+                        <label><input type="radio" name="q4" value="a" selans="solid"> solid</label><br>
+                        <label><input type="radio" name="q4" value="b" selans="liquid"> liquid</label><br>
+                        <label><input type="radio" name="q4" value="c" selans="gas"> gas</label><br>
+                    </li>
+                    <li> 
+                        <p>
+                            <b id="qn5">gasoline</b>
+                        </p>
+                        <label><input type="radio" name="q5" value="a" selans="solid"> solid</label><br>
+                        <label><input type="radio" name="q5" value="b" selans="liquid"> liquid</label><br>
+                        <label><input type="radio" name="q5" value="c" selans="gas"> gas</label><br>
+                    </li>
+                    <li> 
+                        <p>
+                            <b id="qn6">syrup</b>
+                        </p>
+                        <label><input type="radio" name="q6" value="a" selans="solid"> solid</label><br>
+                        <label><input type="radio" name="q6" value="b" selans="liquid"> liquid</label><br>
+                        <label><input type="radio" name="q6" value="c" selans="gas"> gas</label><br>
+                    </li>
+                    <li> 
+                        <p>
+                            <b id="qn7">carbon dioxide</b>
+                        </p>
+                        <label><input type="radio" name="q7" value="a" selans="solid"> solid</label><br>
+                        <label><input type="radio" name="q7" value="b" selans="liquid"> liquid</label><br>
+                        <label><input type="radio" name="q7" value="c" selans="gas"> gas</label><br>
+                    </li>
+                    <li> 
+                        <p>
+                            <b id="qn8">steel</b>
+                        </p>
+                        <label><input type="radio" name="q8" value="a" selans="solid"> solid</label><br>
+                        <label><input type="radio" name="q8" value="b" selans="liquid"> liquid</label><br>
+                        <label><input type="radio" name="q8" value="c" selans="gas"> gas</label><br>
+                    </li>
+                    <li> 
+                        <p>
+                            <b id="qn9">wood</b>
+                        </p>
+                        <label><input type="radio" name="q9" value="a" selans="solid"> solid</label><br>
+                        <label><input type="radio" name="q9" value="b" selans="liquid"> liquid</label><br>
+                        <label><input type="radio" name="q9" value="c" selans="gas"> gas</label><br>
+                    </li>
+                </ol>
+            </div>
+            
+            <div id="menu2" class="tab-pane fade">
+                <h4>Choose the correct answer for each question.</h4>
+                <ol>
+                    <li> 
+                        <p>
+                            <b id="qn10">Which material flows the fastest?</b>
+                        </p>
+                        <label><input type="radio" name="q10" value="a" selans="glue"> glue</label><br>
+                        <label><input type="radio" name="q10" value="b" selans="pancake syrup"> pancake syrup</label><br>
+                        <label><input type="radio" name="q10" value="c" selans="water"> water</label><br>
+                    </li>
+                    <li> 
+                        <p>
+                            <b id="qn11">Which has the greatest mass?</b>
+                        </p>
+                        <label><input type="radio" name="q11" value="a" selans="a bowl of sugar"> a bowl of sugar</label><br>
+                        <label><input type="radio" name="q11" value="b" selans="a teaspoon of salt"> a teaspoon of salt</label><br>
+                        <label><input type="radio" name="q11" value="c" selans="a tablespoon of fl our"> a tablespoon of fl our</label><br>
+                    </li>
+                    <li> 
+                        <p>
+                            <b id="qn12">How is the air in a balloon similar to a glass of orange juice?</b>
+                        </p>
+                        <label><input type="radio" name="q12" value="a" selans="It can be cut."> It can be cut.</label><br>
+                        <label><input type="radio" name="q12" value="b" selans="It occupies space."> It occupies space.</label><br>
+                        <label><input type="radio" name="q12" value="c" selans="It can be broken into small pieces."> It can be broken into small pieces.</label><br>
+                    </li>
+                    <li> 
+                        <p>
+                            <b id="qn13">How is the gas in a ball different from milk in a tetra pack?</b>
+                        </p>
+                        <label><input type="radio" name="q13" value="a" selans="The gas has definite shape and size while the milk does not."> The gas has definite shape and size while the milk does not.</label><br>
+                        <label><input type="radio" name="q13" value="b" selans="The gas fully occupies the space of its container while the milk does not."> The gas fully occupies the space of its container while the milk does not.</label><br>
+                        <label><input type="radio" name="q13" value="c" selans="The gas has defi nite shape while the milk takes the shape of the tetra pack."> The gas has defi nite shape while the milk takes the shape of the tetra pack.</label><br>
+                    </li>
+                    <li> 
+                        <p>
+                            <b id="qn14">What will happen to your mass if you were on the moon?</b>
+                        </p>
+                        <label><input type="radio" name="q14" value="a" selans="It will become less."> It will become less.</label><br>
+                        <label><input type="radio" name="q14" value="b" selans="It will increase."> It will increase.</label><br>
+                        <label><input type="radio" name="q14" value="c" selans="It will remain the same."> It will remain the same.</label><br>
+                    </li>
+                </ol>
+            </div>
+            
+            <div id="menu3" class="tab-pane fade">
+                <h4>Choose the correct answer for each question.</h4>
+                <ol>
+                    <li> 
+                        <p>
+                            <b id="qn15">A glass of water placed in the freezer</b>
+                        </p>
+                        <label><input type="radio" name="q15" value="a" selans="solid to liquid"> solid to liquid</label><br>
+                        <label><input type="radio" name="q15" value="b" selans="liquid to gas"> liquid to gas</label><br>
+                        <label><input type="radio" name="q15" value="c" selans="liquid to solid"> liquid to solid</label><br>
+                    </li>
+                    <li> 
+                        <p>
+                            <b id="qn16">Cooking oil placed in the freezer</b>
+                        </p>
+                        <label><input type="radio" name="q16" value="a" selans="solid to liquid"> solid to liquid</label><br>
+                        <label><input type="radio" name="q16" value="b" selans="liquid to gas"> liquid to gas</label><br>
+                        <label><input type="radio" name="q16" value="c" selans="liquid to solid"> liquid to solid</label><br>
+                    </li>
+                    <li> 
+                        <p>
+                            <b id="qn17">A pat of butter spread on newly toasted bread</b>
+                        </p>
+                        <label><input type="radio" name="q17" value="a" selans="solid to liquid"> solid to liquid</label><br>
+                        <label><input type="radio" name="q17" value="b" selans="liquid to gas"> liquid to gas</label><br>
+                        <label><input type="radio" name="q17" value="c" selans="liquid to solid"> liquid to solid</label><br>
+                    </li>
+                    <li> 
+                        <p>
+                            <b id="qn18">Water boiled in a kettle</b>
+                        </p>
+                        <label><input type="radio" name="q18" value="a" selans="solid to liquid"> solid to liquid</label><br>
+                        <label><input type="radio" name="q18" value="b" selans="liquid to gas"> liquid to gas</label><br>
+                        <label><input type="radio" name="q18" value="c" selans="liquid to solid"> liquid to solid</label><br>
+                    </li>
+                    <li> 
+                        <p>
+                            <b id="qn19">Cologne sprayed on one’s palm</b>
+                        </p>
+                        <label><input type="radio" name="q19" value="a" selans="solid to liquid"> solid to liquid</label><br>
+                        <label><input type="radio" name="q19" value="b" selans="liquid to gas"> liquid to gas</label><br>
+                        <label><input type="radio" name="q19" value="c" selans="liquid to solid"> liquid to solid</label><br>
+                    </li>
+                </ol>
+                
+            </div>
+            
+            <div id="submit" class="tab-pane fade">
+                <h3>Finish</h3>
+                <button type="button" class="btn btn-warning" onclick="checkthis()">Submit Answers</button>
+            </div>
+        </div>
+    </div>
+        
+    
+</div>
+        
+    
+</div>
+    
+<nav class="navbar navbar-default navbar-fixed-bottom container">
+    <div class="container-fluid">
+
+        <div class="navbar-header col-md-4 hidden-sm hidden-xs fleft">
+            <div class="btn-group">
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-8 col-xs-12 text-center fcenter">
+        </div>
+
+        <div class="col-md-4 hidden-xs  text-right fright">
+        </div>
+        
+    </div>
+</nav>                  
+                        
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    
+    $("#menu2").css({"display": "none"});
+    $("#menu3").css({"display": "none"});
+    $("#submit").css({"display": "none"});
+    
+    
+    $("#btn1").click(function(){
+        $("#menu1").css({"display": "inline"});
+        $("#menu2").css({"display": "none"});
+        $("#menu3").css({"display": "none"});
+        $("#submit").css({"display": "none"});
+    });    
+    
+    $("#btn2").click(function(){
+        $("#menu2").css({"display": "inline"});
+        $("#menu1").css({"display": "none"});
+        $("#menu3").css({"display": "none"});
+        $("#submit").css({"display": "none"});
+    }); 
+    
+    $("#btn3").click(function(){
+        $("#menu3").css({"display": "inline"});
+        $("#menu1").css({"display": "none"});
+        $("#menu2").css({"display": "none"});
+        $("#submit").css({"display": "none"});
+    }); 
+    
+    $("#btn4").click(function(){
+        $("#submit").css({"display": "inline"});
+        $("#menu1").css({"display": "none"});
+        $("#menu2").css({"display": "none"});
+        $("#menu3").css({"display": "none"});
+    });
+});
+    
+function checkthis(){
+    
+    var table = ' ';
+    var correctCount = 0;
+    
+    
+    
+    
+    <!----------------------------------------- SET START HERE -------------------------------------------------->
+        
+    var a1 = $('input[name=q1]:checked').val();
+    if(a1 == 'a'){
+        correctCount++;
+        var remarks ="correct";
+    } else {
+        var remarks ="incorrect";
+    }
+    var selans = $('input[name=q1]:checked').attr('selans');
+    var corans = $('input[name=q1]:eq(0)').attr('selans');
+    var questionaire = document.getElementById('qn1').innerHTML;
+    table += "<table class='table table-bordered'><thead><tr><th colspan='3'><b>"+questionaire+"</b></th></tr></thead><tbody><tr> <td width='33%'>Your answer: "+selans+"</td> <td width='33%'>Correct answer: "+corans+" </td><td width='33%'>"+remarks+"</td> </tr></tbody></table>";   
+    
+    
+    <!----------------------------------------- SET START HERE -------------------------------------------------->
+        
+    var a2 = $('input[name=q2]:checked').val();
+    if(a2 == 'c'){
+        correctCount++;
+        var remarks ="correct";
+    } else {
+        var remarks ="incorrect";
+    }
+    var selans = $('input[name=q2]:checked').attr('selans');
+    var corans = $('input[name=q2]:eq(2)').attr('selans');
+    var questionaire = document.getElementById('qn2').innerHTML;
+    table += "<table class='table table-bordered'><thead><tr><th colspan='3'><b>"+questionaire+"</b></th></tr></thead><tbody><tr> <td width='33%'>Your answer: "+selans+"</td> <td width='33%'>Correct answer: "+corans+" </td><td width='33%'>"+remarks+"</td> </tr></tbody></table>";   
+    
+    
+    <!----------------------------------------- SET START HERE -------------------------------------------------->
+        
+    var a3 = $('input[name=q3]:checked').val();
+    if(a3 == 'c'){
+        correctCount++;
+        var remarks ="correct";
+    } else {
+        var remarks ="incorrect";
+    }
+    var selans = $('input[name=q3]:checked').attr('selans');
+    var corans = $('input[name=q3]:eq(2)').attr('selans');
+    var questionaire = document.getElementById('qn3').innerHTML;
+    table += "<table class='table table-bordered'><thead><tr><th colspan='3'><b>"+questionaire+"</b></th></tr></thead><tbody><tr> <td width='33%'>Your answer: "+selans+"</td> <td width='33%'>Correct answer: "+corans+" </td><td width='33%'>"+remarks+"</td> </tr></tbody></table>";   
+    
+    
+    <!----------------------------------------- SET START HERE -------------------------------------------------->
+        
+    var a4 = $('input[name=q4]:checked').val();
+    if(a4 == 'b'){
+        correctCount++;
+        var remarks ="correct";
+    } else {
+        var remarks ="incorrect";
+    }
+    var selans = $('input[name=q4]:checked').attr('selans');
+    var corans = $('input[name=q4]:eq(1)').attr('selans');
+    var questionaire = document.getElementById('qn4').innerHTML;
+    table += "<table class='table table-bordered'><thead><tr><th colspan='3'><b>"+questionaire+"</b></th></tr></thead><tbody><tr> <td width='33%'>Your answer: "+selans+"</td> <td width='33%'>Correct answer: "+corans+" </td><td width='33%'>"+remarks+"</td> </tr></tbody></table>";   
+    
+    
+    <!----------------------------------------- SET START HERE -------------------------------------------------->
+        
+    var a5 = $('input[name=q5]:checked').val();
+    if(a5 == 'b'){
+        correctCount++;
+        var remarks ="correct";
+    } else {
+        var remarks ="incorrect";
+    }
+    var selans = $('input[name=q5]:checked').attr('selans');
+    var corans = $('input[name=q5]:eq(1)').attr('selans');
+    var questionaire = document.getElementById('qn5').innerHTML;
+    table += "<table class='table table-bordered'><thead><tr><th colspan='3'><b>"+questionaire+"</b></th></tr></thead><tbody><tr> <td width='33%'>Your answer: "+selans+"</td> <td width='33%'>Correct answer: "+corans+" </td><td width='33%'>"+remarks+"</td> </tr></tbody></table>";   
+    
+    
+    <!----------------------------------------- SET START HERE -------------------------------------------------->
+        
+    var a6 = $('input[name=q6]:checked').val();
+    if(a6 == 'b'){
+        correctCount++;
+        var remarks ="correct";
+    } else {
+        var remarks ="incorrect";
+    }
+    var selans = $('input[name=q6]:checked').attr('selans');
+    var corans = $('input[name=q6]:eq(1)').attr('selans');
+    var questionaire = document.getElementById('qn6').innerHTML;
+    table += "<table class='table table-bordered'><thead><tr><th colspan='3'><b>"+questionaire+"</b></th></tr></thead><tbody><tr> <td width='33%'>Your answer: "+selans+"</td> <td width='33%'>Correct answer: "+corans+" </td><td width='33%'>"+remarks+"</td> </tr></tbody></table>";   
+    
+    
+    <!----------------------------------------- SET START HERE -------------------------------------------------->
+        
+    var a7 = $('input[name=q7]:checked').val();
+    if(a7 == 'c'){
+        correctCount++;
+        var remarks ="correct";
+    } else {
+        var remarks ="incorrect";
+    }
+    var selans = $('input[name=q7]:checked').attr('selans');
+    var corans = $('input[name=q7]:eq(2)').attr('selans');
+    var questionaire = document.getElementById('qn7').innerHTML;
+    table += "<table class='table table-bordered'><thead><tr><th colspan='3'><b>"+questionaire+"</b></th></tr></thead><tbody><tr> <td width='33%'>Your answer: "+selans+"</td> <td width='33%'>Correct answer: "+corans+" </td><td width='33%'>"+remarks+"</td> </tr></tbody></table>";   
+    
+    
+    <!----------------------------------------- SET START HERE -------------------------------------------------->
+        
+    var a8 = $('input[name=q8]:checked').val();
+    if(a8 == 'a'){
+        correctCount++;
+        var remarks ="correct";
+    } else {
+        var remarks ="incorrect";
+    }
+    var selans = $('input[name=q8]:checked').attr('selans');
+    var corans = $('input[name=q8]:eq(0)').attr('selans');
+    var questionaire = document.getElementById('qn8').innerHTML;
+    table += "<table class='table table-bordered'><thead><tr><th colspan='3'><b>"+questionaire+"</b></th></tr></thead><tbody><tr> <td width='33%'>Your answer: "+selans+"</td> <td width='33%'>Correct answer: "+corans+" </td><td width='33%'>"+remarks+"</td> </tr></tbody></table>";   
+    
+    
+    <!----------------------------------------- SET START HERE -------------------------------------------------->
+        
+    var a9 = $('input[name=q9]:checked').val();
+    if(a9 == 'a'){
+        correctCount++;
+        var remarks ="correct";
+    } else {
+        var remarks ="incorrect";
+    }
+    var selans = $('input[name=q9]:checked').attr('selans');
+    var corans = $('input[name=q9]:eq(0)').attr('selans');
+    var questionaire = document.getElementById('qn9').innerHTML;
+    table += "<table class='table table-bordered'><thead><tr><th colspan='3'><b>"+questionaire+"</b></th></tr></thead><tbody><tr> <td width='33%'>Your answer: "+selans+"</td> <td width='33%'>Correct answer: "+corans+" </td><td width='33%'>"+remarks+"</td> </tr></tbody></table>";   
+    
+    
+    <!----------------------------------------- SET START HERE -------------------------------------------------->
+        
+    var a10 = $('input[name=q10]:checked').val();
+    if(a10 == 'c'){
+        correctCount++;
+        var remarks ="correct";
+    } else {
+        var remarks ="incorrect";
+    }
+    var selans = $('input[name=q10]:checked').attr('selans');
+    var corans = $('input[name=q10]:eq(2)').attr('selans');
+    var questionaire = document.getElementById('qn10').innerHTML;
+    table += "<table class='table table-bordered'><thead><tr><th colspan='3'><b>"+questionaire+"</b></th></tr></thead><tbody><tr> <td width='33%'>Your answer: "+selans+"</td> <td width='33%'>Correct answer: "+corans+" </td><td width='33%'>"+remarks+"</td> </tr></tbody></table>";   
+    
+    
+    <!----------------------------------------- SET START HERE -------------------------------------------------->
+        
+    var a11 = $('input[name=q11]:checked').val();
+    if(a11 == 'a'){
+        correctCount++;
+        var remarks ="correct";
+    } else {
+        var remarks ="incorrect";
+    }
+    var selans = $('input[name=q11]:checked').attr('selans');
+    var corans = $('input[name=q11]:eq(0)').attr('selans');
+    var questionaire = document.getElementById('qn11').innerHTML;
+    table += "<table class='table table-bordered'><thead><tr><th colspan='3'><b>"+questionaire+"</b></th></tr></thead><tbody><tr> <td width='33%'>Your answer: "+selans+"</td> <td width='33%'>Correct answer: "+corans+" </td><td width='33%'>"+remarks+"</td> </tr></tbody></table>";   
+    
+    
+    <!----------------------------------------- SET START HERE -------------------------------------------------->
+        
+    var a12 = $('input[name=q12]:checked').val();
+    if(a12 == 'b'){
+        correctCount++;
+        var remarks ="correct";
+    } else {
+        var remarks ="incorrect";
+    }
+    var selans = $('input[name=q12]:checked').attr('selans');
+    var corans = $('input[name=q12]:eq(1)').attr('selans');
+    var questionaire = document.getElementById('qn12').innerHTML;
+    table += "<table class='table table-bordered'><thead><tr><th colspan='3'><b>"+questionaire+"</b></th></tr></thead><tbody><tr> <td width='33%'>Your answer: "+selans+"</td> <td width='33%'>Correct answer: "+corans+" </td><td width='33%'>"+remarks+"</td> </tr></tbody></table>";   
+    
+    
+    <!----------------------------------------- SET START HERE -------------------------------------------------->
+        
+    var a13 = $('input[name=q13]:checked').val();
+    if(a13 == 'b'){
+        correctCount++;
+        var remarks ="correct";
+    } else {
+        var remarks ="incorrect";
+    }
+    var selans = $('input[name=q13]:checked').attr('selans');
+    var corans = $('input[name=q13]:eq(1)').attr('selans');
+    var questionaire = document.getElementById('qn13').innerHTML;
+    table += "<table class='table table-bordered'><thead><tr><th colspan='3'><b>"+questionaire+"</b></th></tr></thead><tbody><tr> <td width='33%'>Your answer: "+selans+"</td> <td width='33%'>Correct answer: "+corans+" </td><td width='33%'>"+remarks+"</td> </tr></tbody></table>";   
+    
+    
+    <!----------------------------------------- SET START HERE -------------------------------------------------->
+        
+    var a14 = $('input[name=q14]:checked').val();
+    if(a14 == 'c'){
+        correctCount++;
+        var remarks ="correct";
+    } else {
+        var remarks ="incorrect";
+    }
+    var selans = $('input[name=q14]:checked').attr('selans');
+    var corans = $('input[name=q14]:eq(2)').attr('selans');
+    var questionaire = document.getElementById('qn14').innerHTML;
+    table += "<table class='table table-bordered'><thead><tr><th colspan='3'><b>"+questionaire+"</b></th></tr></thead><tbody><tr> <td width='33%'>Your answer: "+selans+"</td> <td width='33%'>Correct answer: "+corans+" </td><td width='33%'>"+remarks+"</td> </tr></tbody></table>";   
+    
+    
+    <!----------------------------------------- SET START HERE -------------------------------------------------->
+        
+    var a16 = $('input[name=q16]:checked').val();
+    if(a16 == 'c'){
+        correctCount++;
+        var remarks ="correct";
+    } else {
+        var remarks ="incorrect";
+    }
+    var selans = $('input[name=q16]:checked').attr('selans');
+    var corans = $('input[name=q16]:eq(2)').attr('selans');
+    var questionaire = document.getElementById('qn16').innerHTML;
+    table += "<table class='table table-bordered'><thead><tr><th colspan='3'><b>"+questionaire+"</b></th></tr></thead><tbody><tr> <td width='33%'>Your answer: "+selans+"</td> <td width='33%'>Correct answer: "+corans+" </td><td width='33%'>"+remarks+"</td> </tr></tbody></table>";   
+    
+    
+    <!----------------------------------------- SET START HERE -------------------------------------------------->
+        
+    var a17 = $('input[name=q17]:checked').val();
+    if(a17 == 'a'){
+        correctCount++;
+        var remarks ="correct";
+    } else {
+        var remarks ="incorrect";
+    }
+    var selans = $('input[name=q17]:checked').attr('selans');
+    var corans = $('input[name=q17]:eq(0)').attr('selans');
+    var questionaire = document.getElementById('qn17').innerHTML;
+    table += "<table class='table table-bordered'><thead><tr><th colspan='3'><b>"+questionaire+"</b></th></tr></thead><tbody><tr> <td width='33%'>Your answer: "+selans+"</td> <td width='33%'>Correct answer: "+corans+" </td><td width='33%'>"+remarks+"</td> </tr></tbody></table>";   
+    
+    
+    <!----------------------------------------- SET START HERE -------------------------------------------------->
+        
+    var a18 = $('input[name=q18]:checked').val();
+    if(a18 == 'b'){
+        correctCount++;
+        var remarks ="correct";
+    } else {
+        var remarks ="incorrect";
+    }
+    var selans = $('input[name=q18]:checked').attr('selans');
+    var corans = $('input[name=q18]:eq(1)').attr('selans');
+    var questionaire = document.getElementById('qn18').innerHTML;
+    table += "<table class='table table-bordered'><thead><tr><th colspan='3'><b>"+questionaire+"</b></th></tr></thead><tbody><tr> <td width='33%'>Your answer: "+selans+"</td> <td width='33%'>Correct answer: "+corans+" </td><td width='33%'>"+remarks+"</td> </tr></tbody></table>";   
+    
+    
+    <!----------------------------------------- SET START HERE -------------------------------------------------->
+        
+    var a19 = $('input[name=q19]:checked').val();
+    if(a19 == 'b'){
+        correctCount++;
+        var remarks ="correct";
+    } else {
+        var remarks ="incorrect";
+    }
+    var selans = $('input[name=q19]:checked').attr('selans');
+    var corans = $('input[name=q19]:eq(1)').attr('selans');
+    var questionaire = document.getElementById('qn19').innerHTML;
+    table += "<table class='table table-bordered'><thead><tr><th colspan='3'><b>"+questionaire+"</b></th></tr></thead><tbody><tr> <td width='33%'>Your answer: "+selans+"</td> <td width='33%'>Correct answer: "+corans+" </td><td width='33%'>"+remarks+"</td> </tr></tbody></table>";
+    
+    
+
+
+    document.getElementById("submit").innerHTML = table;
+    //var correctCount = 10;
+    var totalQuestions = 19;
+
+    var score = Math.round(correctCount * 100 / totalQuestions);
+    
+
+    localStorage.setItem("grade8act2total", totalQuestions);
+    localStorage.setItem("grade8act2correct", correctCount);
+    localStorage.setItem("grade8act2percent", score);
+
+    var totalitems =  totalQuestions;          
+    var correctm = score;
+
+    if(correctm >=0 && correctm <=29 ){
+        var greet = "Catch up!";
+        var greets = "Review the lesson and improve your score.";
+        var greetimg = "image/feedback_01.png";
+    }
+    else if(correctm >=30 && correctm <=59){
+        var greet = "Stay Focused!";
+        var greets = "Practice some more and do better.";
+        var greetimg = "image/feedback_02.png"; 
+    }
+    else if(correctm >=60 && correctm <=79){
+        var greet = "Good!";    
+        var greets = "You can do it better.";
+        var greetimg = "image/feedback_03.png";
+    }
+    else if(correctm >=80 && correctm <=99){
+        var greet = "Very Good!";
+        var greets = "Keep up the good work.";
+        var greetimg = "image/feedback_04.png" ;
+    }
+    else if(correctm ==100){
+        var greet = "Excellent!";
+        var greets = "You did a good job.";
+        var greetimg = "image/feedback_05.png" ;
+    }
+
+    swal({   
+      title: correctm +"%",   
+      text: greet + "<br /><span style='font-size: 22px;'>" + greets + "</span>",   
+      imageUrl: greetimg, 
+      confirmButtonColor: "#f69512",
+      html: true
+    }); 
+}    
+</script>      
+    
+
+
+    
+</body>
+</html>

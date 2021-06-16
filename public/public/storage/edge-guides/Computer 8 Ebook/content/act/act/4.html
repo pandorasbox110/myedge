@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Common Materials</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/jquery.lightbox.css" rel="stylesheet">
+    
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.js"></script>
+</head>   
+    
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top container">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" style="margin-top: -20px;" href="#">Common Materials</a>
+        </div>
+    </div>
+</nav> 
+    
+<div id="mainCont" class="container mainCont"> 
+        
+<h2>Scores</h2>
+    
+<br />
+    
+  <table class="table table-bordered text-center table-hover">
+    <thead>
+      <tr>
+        <td><span class="hidden-xs">Number of Items</span><span class="glyphicon glyphicon-list hidden-lg hidden-md hidden-sm"></span></td>
+        <td><span class="hidden-xs">Correct Answers</span><span class="glyphicon glyphicon-ok hidden-lg hidden-md hidden-sm"></span></td>
+        <td><span class="hidden-xs">Score (in %)</span><span class="glyphicon glyphicon-star hidden-lg hidden-md hidden-sm"></span></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="total"></td>
+        <td id="cor"></td>
+        <td id="per"></td>
+      </tr>
+    </tbody>
+  </table>	
+    
+</div>
+    
+
+
+
+<script>
+
+var totalcor = parseInt(0);
+var totaltotal = parseInt(0);
+var totalper = parseInt(0); 
+        
+
+	
+if (localStorage.getItem("grade8act2total") === null) {
+    document.getElementById('total').innerHTML = "10";
+    document.getElementById('cor').innerHTML = "5";
+    document.getElementById('per').innerHTML = "50";
+}
+else {
+    document.getElementById('total').innerHTML = parseInt(localStorage.getItem('grade8act2total'));
+    document.getElementById('cor').innerHTML = parseInt(localStorage.getItem('grade8act2correct'));
+    document.getElementById('per').innerHTML = parseInt(localStorage.getItem('grade8act2percent'))+"";
+}
+        
+$(window).unload(function(){
+    localStorage.removeItem("grade8act2total");
+    localStorage.removeItem("grade8act2correct");
+    localStorage.removeItem("grade8act2percent");
+});
+
+</script>
+
+    
+</body>
+</html>

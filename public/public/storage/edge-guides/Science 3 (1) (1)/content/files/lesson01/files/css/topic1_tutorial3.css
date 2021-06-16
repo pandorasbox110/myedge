@@ -1,0 +1,42 @@
+#main_icon{
+    background-image: url(../../img/topic103.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+h2{
+    font-family: Roboto-Bold;
+    font-size: 1.3em;
+    color: #ff9900;
+}
+
+table{
+    position: relative;
+    margin: auto;
+    overflow: auto;
+}
+
+th, td{
+    margin: 0;
+    padding: 5px;
+    width: 250px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+#main_submenu{ display: none; }
+
+@media screen and (max-width: 600px){
+    #main_nav .nav_button{
+        display: none;
+    }
+    #main_submenu{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px){
+    th, td{
+        width: 125px;
+    }
+}

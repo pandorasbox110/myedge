@@ -1,0 +1,194 @@
+#main_content{
+    min-height: 320px;
+}
+
+#progress, #solution{
+    margin-bottom: 75px;
+}
+
+#main_icon{
+    background-image: url(../../img/activity.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#main_nav{
+    text-align: right;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.nav_button{
+    background: #1696d7;
+    border: 1px solid #fff;
+    margin: auto;
+    margin-top: 5px;
+    width: 110px;
+}
+
+div.nav_button:hover{
+    background: #f08734;
+    border: 1px solid #fff;
+}
+
+.buttonbox{
+    position: relative;
+    margin: auto;
+    margin-top: 15px;
+    padding: auto;
+    text-align: center;
+}
+
+
+div.item_slideshow{
+    position: relative;
+    display: block;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+div.item{
+    position: absolute;
+    display: block;
+    left: 0; right: 0; top: 0;
+    opacity: 0;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 25px;
+    color: #02202f;
+    overflow:hidden;
+}
+
+div.item.show{
+    position: relative;
+    opacity: 1;
+    transition: 0.5s opacity;
+}
+
+#sentence0 span,
+#sentence1 span,
+#sentence2 span,
+#sentence3 span{
+	position: relative;
+    pointer-events: none;
+	z-index:1;
+}
+
+div.item.show #sentence0 span,
+div.item.show #sentence1 span,
+div.item.show #sentence2 span,
+div.item.show #sentence3 span{
+    pointer-events: auto;
+}
+
+#sentence0 span:hover,
+#sentence1 span:hover,
+#sentence2 span:hover,
+#sentence3 span:hover{
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+div.item.show #sentence0 span.active:hover,
+div.item.show #sentence1 span.active:hover,
+div.item.show #sentence2 span.active:hover,
+div.item.show #sentence3 span.active:hover,
+div.item.show #sentence0 span.activem:hover,
+div.item.show #sentence1 span.activem:hover,
+div.item.show #sentence2 span.activem:hover,
+div.item.show #sentence3 span.activem:hover{
+    opacity: 1;
+    pointer-events: none;
+}
+
+span.active{
+	background: #ffb452;
+	color: #fff;
+	padding: 3px;
+	z-index: 0;
+	pointer-events: none;
+}
+
+span.activem{
+    background: #00a678;
+	color: #fff;
+	padding: 3px;
+	z-index: 0;
+	pointer-events: none;
+}
+ 
+input[type="radio"]{
+    display: none;
+    pointer-events: none;
+}
+
+div.item.show input[type="radio"]{ z-index: 5; pointer-events: auto; }
+
+input[type="radio"] + label{
+    font-size: 1em;
+}
+
+input[type="radio"] + label span{
+    display:inline-block;
+    width:15px;
+    height:15px;
+    margin:-1px 5px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    border-radius:  50%;
+	background-color: #fff;
+	position: relative;
+	z-index: 1;
+}
+
+input[id="opt0"] + label span,
+input[id="opt2"] + label span,
+input[id="opt4"] + label span,
+input[id="opt6"] + label span{
+     background-color:#ffb452;
+}
+
+input[id="opt0"]:checked + label span,
+input[id="opt2"]:checked + label span,
+input[id="opt4"]:checked + label span,
+input[id="opt6"]:checked + label span{
+    background-color:#ffb452;
+	border: 1px solid black;
+}
+
+input[id="opt1"] + label span,
+input[id="opt3"] + label span,
+input[id="opt5"] + label span,
+input[id="opt7"] + label span{
+    background-color:#00a678;
+}
+
+input[id="opt1"]:checked + label span,
+input[id="opt3"]:checked + label span,
+input[id="opt5"]:checked + label span,
+input[id="opt7"]:checked + label span{
+    background-color:#00a678;
+	border: 1px solid black;
+}
+
+#reset{
+    position: relative;
+    margin: auto;
+    z-index: 3;
+    background: #189adc;
+    border: 1px solid #189adc;
+    border-radius: 7px;
+    width: 100px;
+    padding: 5px;
+    margin: 3px;
+    box-shadow: 2px 3px #0e6891;
+    color: #fff;
+    pointer-events: auto;
+}
+
+#reset:hover{ box-shadow: 1px 2px #0e6891; cursor: pointer;}
+#reset:active{ box-shadow: 2px 3px #0e6891; }
+
+#progress span, #solution span{ pointer-events: none; }
+#progress span:hover, #solution span:hover{ opacity: 1; }

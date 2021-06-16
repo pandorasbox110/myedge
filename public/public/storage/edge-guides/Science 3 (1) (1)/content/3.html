@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Science 8</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/ionicons-2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="vendors/simptip-master/simptip.css">
+    <link rel="stylesheet" href="css/unique.css">
+    <link rel="stylesheet" href="scss/animate.scss">
+</head>
+    
+<body style="padding-bottom: 50px;">
+
+    <style>
+        .showme {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            margin-bottom:  50px;
+        }
+    </style>
+
+    <iframe scrolling="no" src="sc3/content/C01/L1-1/2.html" id="showme" class="showme">
+    
+    </iframe>
+    
+    <div class="back-btn">
+        <a href="1.html" class="btn btn-default btn-circle"><i class="ion-android-arrow-back"></i></a>
+    </div>
+    
+    <div class="option-btn">
+        <button type="button" class="btn btn-default btn-circle fadein"><i class="fa fa-cog"></i></button>
+    </div>
+    
+    <div class="option-overlay">
+        <div class="one">
+            <label>Overview</label>
+            <button type="button" class="btn btn-default btn-circle"><i class="ion-android-desktop"></i></button>
+        </div>
+        <div class="two">
+            <label>Assessments</label>
+            <button type="button" class="btn btn-default btn-circle"><i class="ion-android-clipboard"></i></button>
+        </div>
+        <div class="three">
+            <label>Resources</label>
+            <button type="button" class="btn btn-default btn-circle"><i class="fa fa-download"></i></button>
+        </div>
+        <div class="four">
+            <label>Subjects Ebook</label>
+            <button type="button" class="btn btn-default btn-circle"><i class="ion-android-clipboard"></i></button>
+        </div>
+        <div class="five">
+            <button type="button" class="btn btn-default btn-circle fadeout"><i class="ion-android-close"></i></button>
+        </div>
+    </div>
+    
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container-fluid">
+            <div class="text-center main-controls">
+                <button type="button" class="btn btn-warning previous">
+                    <i class="glyphicon glyphicon glyphicon-chevron-left"></i>previous
+                </button>
+                <button type="button" class="btn btn-warning next">
+                    next<i class="glyphicon glyphicon glyphicon-chevron-right"></i>
+                </button>
+                <button type="button" class="btn btn-warning exit">
+                    exit<i class="glyphicon glyphicon glyphicon-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    
+</body>
+<script src="vendors/jquery/jquery.min.js"></script>
+<script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        window.addEventListener("keydown", keyListener, false);
+        function keyListener(e) {
+            switch(e.keyCode) {
+                case 27:    
+                    $(".option-overlay").fadeOut();
+                break;
+            }	
+        }
+        var pageno = 1;
+        
+        var startat = 2;
+        var endat = 9;
+        
+        $(".next").click(function(){
+            if(pageno < endat){
+                pageno++;
+                document.getElementById('showme').src = "sc3/content/C01/L1-1/" + pageno + ".html";
+            }
+        });
+        function nextpage() {
+            if(pageno < endat){
+                pageno++;
+                document.getElementById('showme').src = "sc3/content/C01/L1-1/" + pageno + ".html";
+            }
+        }
+        
+        $(".previous").click(function(){
+            if(pageno > startat){
+                pageno--;
+                document.getElementById('showme').src = "sc3/content/C01/L1-1/" + pageno + ".html";
+            }
+        });
+        
+        $(".exit").click(function(){
+            window.location='1.html';
+        });
+        
+    });
+</script>
+<script src="js/scripts.js"></script>
+
+    
+</html>

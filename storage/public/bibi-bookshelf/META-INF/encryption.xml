@@ -1,0 +1,86 @@
+<encryption xmlns="urn:oasis:names:tc:opendocument:xmlns:container" xmlns:enc="http://www.w3.org/2001/04/xmlenc#">
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/Arial-Black.ttf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/AvantGardeITCbyBT-Book.ttf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/AvantGardeITCbyBT-Demi.ttf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/Chalkboard-Bold.ttc" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/Helvetica-CondensedBold.ttf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/Helvetica.ttf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/HelveticaNeueLTStd-Cn.otf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/HelveticaNeueLTStd-HvIt.otf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/NewCenturySchoolbookItalic.ttf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/TimesNewRomanPS-BoldMT.ttf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/TimesNewRomanPSMT.ttf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/VAG-Rounded-Bold.ttf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/VAGRoundedBlackSSK-Bold.ttf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+	<enc:EncryptedData>
+		<enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding" />
+		<enc:CipherData>
+			<enc:CipherReference URI="OEBPS/font/VAGRoundedBT-Regular.ttf" />
+		</enc:CipherData>
+	</enc:EncryptedData>
+</encryption>

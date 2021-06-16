@@ -1,0 +1,99 @@
+#main_content{
+    min-height: 250px;
+}
+
+#progress #main_content,
+#solution #main_content{
+    margin-bottom: 50px;
+}
+
+#main_icon{
+    background-image: url(../../img/activity.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#main_nav{
+    text-align: right;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.nav_button{
+    background: #1696d7;
+    border: 1px solid #fff;
+    margin: auto;
+    margin-top: 5px;
+    width: 110px;
+}
+
+div.nav_button:hover{
+    background: #f08734;
+    border: 1px solid #fff;
+}
+
+div.item_slideshow{
+    position: relative;
+    display: block;
+    margin: auto;
+    padding: auto;
+}
+
+div.item{
+    position: absolute;
+    display: block;
+    left: 0; right: 0; top: 0;
+    opacity: 0;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 25px;
+    color: #02202f;
+    overflow:hidden;
+}
+
+div.item.show{
+    position: relative;
+    opacity: 1;
+    transition: 0.5s opacity;
+}
+
+input[type="text"]{
+    position: relative;
+    margin: 0;
+    padding: 1px;
+    color: #df9a16;
+    background: #fff;
+    border: 2px solid #df9a16;
+    border-radius: 7px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: text-bottom;
+}
+
+input.given{ border: 2px solid #0e6891; color: #0e6891;}
+input.tall{ height: 40px; }
+
+div.item.show input[type="text"]{
+    z-index: 3;
+    pointer-events: auto;
+}
+
+#progress #main_content, 
+#solution #main_content{ text-align: center; }
+
+#progress #main_content input,
+#solution #main_content input{
+    pointer-events: none;
+}
+
+hr{
+    border: 1px dashed #0e6891;
+}
+
+div.item p{ font-weight: bold; }
+
+.ans_icon{
+    height: 12px;
+}
