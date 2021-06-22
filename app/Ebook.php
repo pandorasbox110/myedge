@@ -65,16 +65,17 @@ class Ebook extends Model
 
                                     ->whereHas('ebook',function($q) use($keyword){
                                     //filter only claimed
-                                    $q->when(Auth::user()->userType->name != 'Admin',function($q){
-                                        $q->whereHas('keys',function($q){
-                                            return $q->where('user_id', \Auth::user()->id);
-                                        });
-                                    })
-                                    ->
-                                    where(function($qq) use($keyword){
-                                        $qq ->where('ebook_title', 'LIKE', '%'.$keyword.'%')
-                                        ->orWhere('price','LIKE','%'.$keyword.'%');
-                                    })->where('is_deleted',0);
+                                        $q->when(Auth::user()->userType->name != 'Admin',function($q){
+                                            $q->whereHas('keys',function($q){
+                                                return $q->where('user_id', \Auth::user()->id);
+                                            });
+                                        })
+                                        //--
+                                        ->
+                                        where(function($qq) use($keyword){
+                                            $qq ->where('ebook_title', 'LIKE', '%'.$keyword.'%')
+                                            ->orWhere('price','LIKE','%'.$keyword.'%');
+                                        })->where('is_deleted',0);
                                     })
                             ->where('user_id',Auth::user()->id)
                             ->where('is_deleted',0)

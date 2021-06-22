@@ -25,7 +25,18 @@ class ActivationController extends Controller
     }
     public function claim_book(Request $request){
 
-       $activation =  Activation::where('activation_key','=',$request->activation_key)->first();
+       $activation =  Activation::with('ebook')->where('activation_key','=',$request->activation_key)->first();
+        $is_assigned = \App\AsignedEbook::where('ebook_id',$activation->book_id)->where('user_id',\Auth::user()->id)->count() >= 1;
+        if(!$is_assigned){
+            $ebook = $activation->ebook;
+            $new_assigned =new \App\AsignedEbook();
+            $new_assigned->ebook_id = $ebook->id;
+            $new_assigned->ebook_title = $ebook->ebook_title;
+            $new_assigned->user_id = \Auth::user()->id;
+            $new_assigned->added_by = 23;
+            $new_assigned->is_deleted = 0;
+            $new_assigned->save();
+        }
 
         if(!$activation)
             return \Redirect::back()->withErrors(['Activation Key is invalid']);
@@ -38,7 +49,7 @@ class ActivationController extends Controller
             //     return \Redirect::back()->withErrors(['You Already Claimed this type of book']);
 
 
-
+           
             if($activation->status == 1)
                 return \Redirect::back()->withErrors(['Book Already Claimed']);
             else if($activation->status == 0 && count($count_activated )>=1)
@@ -52,7 +63,7 @@ class ActivationController extends Controller
                 return redirect()
                     ->back()
                     ->withInput()
-                    ->with('message', 'There was a failure while sending the message!');}
+                    ->with('message', 'Code Activated');}
             }
 
     }
@@ -65,7 +76,7 @@ class ActivationController extends Controller
             for ($i=0; $i < $req->count ; $i++) {
                 $ebook = new \App\Activation();
                 $ebook->book_id = $req->book_id;
-                $ebook->activation_key = uniqid();
+                $ebook->activation_key = $req->slug."-".uniqid();
                 $ebook->status = 0;
                 $ebook->save();
             }

@@ -12,6 +12,7 @@
                 <form action="/activation" method="POST" class="pb-2">
                     @csrf
                     <input type="hidden" name="book_id" value="{{$book->id}}">
+                    <input class="form-control" type="text" name="slug" value="{{ preg_replace('/\s+/', '-',$book->ebook_title)}}">
                     <input class="form-control" type="number" name="count" value="1">
                     <input type="submit" value="Generate">
                 </form>
