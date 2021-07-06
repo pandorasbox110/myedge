@@ -25,7 +25,9 @@ class ActivationController extends Controller
     }
     public function claim_book(Request $request){
 
-       $activation =  Activation::with('ebook')->where('activation_key','=',$request->activation_key)->first();
+        $activation =  Activation::with('ebook')->where('activation_key','=',$request->activation_key)->first();
+        if(!$activation)
+            return \Redirect::back()->withErrors(['Activation Key is invalid']);
         $is_assigned = \App\AsignedEbook::where('ebook_id',$activation->book_id)->where('user_id',\Auth::user()->id)->count() >= 1;
         if(!$is_assigned){
             $ebook = $activation->ebook;
@@ -45,9 +47,7 @@ class ActivationController extends Controller
 
             $count_activated = Activation::whereStatus(1)->where('book_id',$activation->book_id)->where('user_id',\Auth::user()->id)->where('status',1)->get();
 
-            // if($count_activated )
-            //     return \Redirect::back()->withErrors(['You Already Claimed this type of book']);
-
+       
 
            
             if($activation->status == 1)
